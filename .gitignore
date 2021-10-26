@@ -1,5 +1,6 @@
-/_pgbackup
-/_pginfo
-/pgia
+_pgbackup
+_pginfo
+pgia
 pinegrow.json
 *.pgml
+_pginfo
