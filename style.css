@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .section_heading {
     color: pink;
 }
