@@ -595,6 +595,9 @@
             max-width: 1536px;
       }
 }
+.static {
+      position: static;
+}
 .fixed {
       position: fixed;
 }
@@ -607,6 +610,36 @@
 .sticky {
       position: sticky;
 }
+.left-36 {
+      left: 9rem;
+}
+.left-0 {
+      left: 0px;
+}
+.top-0 {
+      top: 0px;
+}
+.left-10 {
+      left: 2.5rem;
+}
+.left-5 {
+      left: 1.25rem;
+}
+.left-6 {
+      left: 1.5rem;
+}
+.left-7 {
+      left: 1.75rem;
+}
+.-left-10 {
+      left: -2.5rem;
+}
+.-left-20 {
+      left: -5rem;
+}
+.-left-40 {
+      left: -10rem;
+}
 .z-10 {
       z-index: 10;
 }
@@ -616,6 +649,12 @@
 .z-30 {
       z-index: 30;
 }
+.float-none {
+      float: none;
+}
+.m-96 {
+      margin: 24rem;
+}
 .mx-auto {
       margin-left: auto;
       margin-right: auto;
@@ -623,6 +662,10 @@
 .-mx-4 {
       margin-left: -1rem;
       margin-right: -1rem;
+}
+.my-96 {
+      margin-top: 24rem;
+      margin-bottom: 24rem;
 }
 .mr-auto {
       margin-right: auto;
@@ -657,6 +700,9 @@
 .mb-5 {
       margin-bottom: 1.25rem;
 }
+.mt-96 {
+      margin-top: 24rem;
+}
 .inline-block {
       display: inline-block;
 }
@@ -687,6 +733,27 @@
 .h-5 {
       height: 1.25rem;
 }
+.h-4\/5 {
+      height: 80%;
+}
+.h-screen {
+      height: 100vh;
+}
+.h-3\/4 {
+      height: 75%;
+}
+.h-2\.5 {
+      height: 0.625rem;
+}
+.h-80 {
+      height: 20rem;
+}
+.h-5\/6 {
+      height: 83.333333%;
+}
+.h-2 {
+      height: 0.5rem;
+}
 .w-full {
       width: 100%;
 }
@@ -701,6 +768,29 @@
 }
 .w-5 {
       width: 1.25rem;
+}
+.w-32 {
+      width: 8rem;
+}
+.w-48 {
+      width: 12rem;
+}
+.w-auto {
+      width: auto;
+}
+.w-max {
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+}
+.w-40 {
+      width: 10rem;
+}
+.w-36 {
+      width: 9rem;
+}
+.w-28 {
+      width: 7rem;
 }
 .flex-1 {
       flex: 1 1 0%;
@@ -865,6 +955,12 @@
 }
 .pt-12 {
       padding-top: 3rem;
+}
+.pt-0\.5 {
+      padding-top: 0.125rem;
+}
+.pt-0 {
+      padding-top: 0px;
 }
 .text-center {
       text-align: center;
@@ -1035,6 +1131,14 @@ body, html {min-height: 100vh;}
       }
 }                    
 @media (min-width: 1024px) {
+
+      .lg\:static {
+            position: static;
+      }
+
+      .lg\:fixed {
+            position: fixed;
+      }
 
       .lg\:absolute {
             position: absolute;

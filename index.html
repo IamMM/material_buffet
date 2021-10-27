@@ -6,33 +6,34 @@
         <title>Material Buffet</title>
         <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
         <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+        <script type="text/javascript" src="script.js"></script>
         <meta name="description" content="dein gemeinnütziger Second-Hand-Baumarkt in Leipzig">
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body class="bg-mwhite-500 font-sans text-gray-500">
         <header style="background-image: url('assets/shapes/Distress%20Press.png');" class="fixed w-full z-30"> 
-            <nav class="container flex flex-wrap h-20 items-center mx-auto px-4 py-5"> 
-                <img src="assets/logo/MB_Icon_Black-01.png" class="h-full mr-auto"/> 
-                <div class="hidden lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto space-y-2 w-full" data-name="nav-menu"> 
+            <nav class="container flex flex-wrap h-20 items-center mx-auto px-4 py-5">
+                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="fixed left-10 top-0 w-28" data-pg-ia-hide data-pg-ia='{"l":[{"trg":"mouseenter","a":"pulse"},{"trg":"mousedown","a":"bounce"}]}' data-pg-ia-scene='{"dir":"a","dbg":"true","s":"onLeave","s_t":"start","s_s":"start","s_scroller":"$.mb-5","e_t":"end","e_target":"$.mb-5","e_s":"start","l":[{"name":"roll-In","a":"rollIn","p":"scroll"}]}'/> 
+                <div class="hidden ml-auto space-y-2 w-full lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto" data-name="nav-menu"> 
                     <div class="flex flex-col lg:flex-row"> 
                         <a href="#" class="font-light hover:text-blue-600 hover:text-mpink-500 px-0 py-2 uppercase lg:px-4">Das Konzept</a> 
                         <a href="#" class="font-light hover:text-blue-600 hover:text-mpink-500 px-0 py-2 uppercase lg:px-4">Speisekarte</a> 
                         <a href="#" class="font-light hover:text-blue-600 hover:text-mpink-500 px-0 py-2 uppercase lg:px-4">Lageplan</a> 
                         <a href="#" class="font-light hover:text-blue-600 hover:text-mpink-500 px-0 py-2 uppercase lg:px-4">Unterstützen</a> 
-                        <a href="#" class="font-light hover:text-blue-600 hover:text-mpink-500 px-0 py-2 uppercase lg:px-4">Kontakt</a> 
                     </div>                     
                 </div>                 
             </nav>             
         </header>
         <main>
             <section class="relative text-gray-500"> 
-                <button>Click me!</button>
-                <img src="assets/logo/MB_icon&word_Black-01.png" data-pg-ia='{"l":[{"name":"logo to nav","trg":"scrolling","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"pgPos":{"scale":1,"pos":"left"}}}]}]}}]}' class="z-50"/>
+                <div class="w-full">
+                    <img src="assets/logo/MB_icon&word_Black-01.png" data-pg-ia-scene='{"dir":"a","on":"off","s":"custom","s_t":"start","s_s":"start","e_t":"end","e_s":"start","l":[{"a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"width":"10%","height":"10%"},"e":"Linear.easeNone"}]}]},"p":"scroll"}]}'/>
+                </div>
                 <div class="container mx-auto pt-16 px-4"> 
                     <div class="-mx-4 flex flex-wrap mx-auto mb-16"> 
                         <div class="mb-5 px-4 w-full"> 
                             <h1 class="font-extrabold mb-4 text-6xl text-gray-600 lg:text-gray-800">Mahlzeit! -&nbsp;Wir sind das Materialbuffet</h1>
-                            <h1 class="font-extrabold mb-4 text-5xl">dein gemeinnütziger Second-Hand-Baumarkt in Leipzig</h1> 
+                            <h1 class="font-extrabold mb-4 text-5xl text-gray-800">dein gemeinnütziger Second-Hand-Baumarkt in Leipzig</h1> 
                             <p class="font-light leading-tight mb-6 text-2xl">Durch die Verwertung von Reststoffen vermeiden wir aktiv Müll und fördern Materialkreisläufe. Unsere Vision: eine Zentrum für gebrauchte Materialien, kreative Wiederverwendung und Ressourcenschonung in Leipzig. Yummy.</p> 
                         </div>                         
                         <div class="mx-auto">
