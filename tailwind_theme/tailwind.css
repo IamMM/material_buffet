@@ -1163,6 +1163,22 @@ body, html {min-height: 100vh;}
       --tw-text-opacity: 1;
       color: rgba(62, 76, 71, var(--tw-text-opacity));
 }                    
+.hover\:text-color_buffet-100:hover {
+      --tw-text-opacity: 1;
+      color: rgba(221, 78, 69, var(--tw-text-opacity));
+}                    
+.hover\:text-color_buffet-200:hover {
+      --tw-text-opacity: 1;
+      color: rgba(242, 173, 19, var(--tw-text-opacity));
+}                    
+.hover\:text-color_buffet-400:hover {
+      --tw-text-opacity: 1;
+      color: rgba(0, 160, 126, var(--tw-text-opacity));
+}                    
+.hover\:text-color_buffet-600:hover {
+      --tw-text-opacity: 1;
+      color: rgba(14, 90, 167, var(--tw-text-opacity));
+}                    
 .hover\:underline:hover {
       text-decoration: underline;
 }                    
