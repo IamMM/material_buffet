@@ -9,13 +9,18 @@
         <script type="text/javascript" src="script.js"></script>
         <meta name="description" content="dein gemeinnütziger Second-Hand-Baumarkt in Leipzig">
         <link rel="stylesheet" href="tailwind_theme/tailwind.css">
+        <link rel="stylesheet" href="pgia/components/controls.css">
+        <link rel="stylesheet" href="pgia/components/slider.css">
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body class="bg-secondary_buffet-600 font-sans text-neutral_buffet-600">
         <header style="background-image: url('assets/shapes/Distress%20Press.png');" class="fixed w-full z-30"> 
             <nav class="container flex flex-wrap h-20 items-center mx-auto px-4 py-5">
-                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="fixed left-20 top-0 w-28" data-pg-ia-hide data-pg-ia='{"l":[{"trg":"mouseenter","a":"pulse"},{"trg":"mousedown","a":"bounce"}]}' data-pg-ia-scene='{"dir":"a","d":"100%","s_t":"start","s_s":"start","s_scroller":"$.mb-5","e_t":"end","e_target":"$#main","e_s":"start","l":[{"name":"roll-In","a":"rollIn","p":"scroll"}],"s":"auto"}'/> 
-                <div class="hidden ml-auto space-y-2 w-full lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto" data-name="nav-menu"> 
+                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="fixed left-20 top-0 w-28" data-pg-ia-hide data-pg-ia='{"l":[{"trg":"mouseenter","a":"pulse"},{"trg":"mousedown","a":"bounce"}]}' data-pg-ia-scene='{"dir":"a","d":"100%","s_t":"start","s_s":"start","s_scroller":"$.mb-5","e_t":"end","e_target":"$#main","e_s":"start","l":[{"name":"roll-In","a":"rollIn","p":"scroll"}],"s":"auto"}'/>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 ml-auto w-6 lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-pg-ia='{"l":[{"trg":"mousedown","t":"$nav #gt# div","a":"lightSpeedIn","on":"mobile"}]}'>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>                 
+                <div class="ml-auto space-y-2 w-full md:text-right lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto" data-name="nav-menu" id="menu" data-pg-ia-hide data-pg-ia='{"l":[{"name":"hide","trg":"mousedown_notouch","a":"slideOutRight","on":"mobile"}]}'> 
                     <div class="flex flex-col lg:flex-row"> 
                         <a href="#" class="font-light hover:text-color_buffet-100 px-0 py-2 uppercase lg:px-4">Das Konzept</a> 
                         <a href="#speisekarte" class="font-light hover:text-color_buffet-200 px-0 py-2 uppercase lg:px-4">Speisekarte</a> 
@@ -25,21 +30,21 @@
                 </div>                 
             </nav>             
         </header>
-        <main id="main">
+        <main id="main" class="pt-20">
             <img src="assets/shapes/Form_02_turquise1.png" class="absolute bottom-40 left-1/2" data-pg-ia='{"l":[{"trg":"scrolling","a":"rotateIn"}]}' data-pg-ia-hide/>
-            <section class="relative"> 
-                <div class="w-full">
-                    <img src="assets/logo/MB_icon&word_Black-01.png" data-pg-ia-scene='{"dir":"v","on":"off","s":"custom","s_t":"start","s_s":"start","s_o":"10","e_t":"end","e_target":"$.mb-5","e_s":"start","l":[{"a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"width":"10%","height":"10%"},"e":"Linear.easeNone"}]}]},"p":"scroll"}],"s_scroller":"$.mb-5"}' class="mx-auto place-self-center w-10/12"/>
+            <section class="relative xl:h-screen xl:text-center"> 
+                <div class="space-y-2 w-full">
+                    <img src="assets/logo/MB_icon&word_Black-01.png" data-pg-ia-scene='{"dir":"v","on":"off","s":"custom","s_t":"start","s_s":"start","s_o":"10","e_t":"end","e_target":"$.mb-5","e_s":"start","l":[{"a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"width":"10%","height":"10%"},"e":"Linear.easeNone"}]}]},"p":"scroll"}],"s_scroller":"$.mb-5"}' class="mx-auto place-self-center w-10/12 xl:w-6/12"/>
                 </div>
-                <div class="container mx-auto pt-16 px-4"> 
-                    <div class="-mx-4 flex flex-wrap mx-auto mb-16"> 
-                        <div class="mb-5 px-4 w-full" id="hero-text"> 
-                            <h1 class="font-extrabold mb-4 text-6xl">Mahlzeit! -&nbsp;Wir sind das Materialbuffet</h1>
-                            <h1 class="font-extrabold mb-4 text-5xl">dein gemeinnütziger Second-Hand-Baumarkt in Leipzig</h1> 
-                            <p class="font-light leading-tight mb-6 text-2xl">Durch die Verwertung von Reststoffen vermeiden wir aktiv Müll und fördern Materialkreisläufe. Unsere Vision: eine Zentrum für gebrauchte Materialien, kreative Wiederverwendung und Ressourcenschonung in Leipzig. Yummy.</p> 
+                <div class="mx-auto pt-16 px-4 text-center w-full md:w-full xl:w-7/12"> 
+                    <div class="-mx-4 flex flex-wrap mb-16 mx-auto"> 
+                        <div class="mb-5 w-full xl:mt-20" id="hero-text"> 
+                            <h1 class="font-extrabold mb-4 text-5xl">Mahlzeit! -&nbsp;Wir sind das Materialbuffet</h1>
+                            <h1 class="font-extrabold mb-4 text-2xl md:text-4xl">dein gemeinnütziger Second-Hand-Baumarkt in Leipzig</h1> 
+                            <p class="font-light leading-tight mb-6 text-xl">Durch die Verwertung von Reststoffen vermeiden wir aktiv Müll und fördern Materialkreisläufe. Unsere Vision: eine Zentrum für gebrauchte Materialien, kreative Wiederverwendung und Ressourcenschonung in Leipzig. Yummy.</p> 
                         </div>                         
                         <div class="mx-auto">
-                            <a href="#" class="bg-bold_buffet-300 font-medium hover:shadow-xl inline-block px-20 py-2 rounded-full rounded-tl-none text-center text-white uppercase">Erfahre mehr</a>
+                            <a href="/konzept.html" class="bg-bold_buffet-300 font-medium hover:shadow-xl inline-block px-20 py-2 rounded-full rounded-tl-none text-center text-white uppercase">Erfahre mehr</a>
                         </div>                         
                     </div>                     
                 </div>                 
@@ -52,72 +57,51 @@
                 <div class="flex flex-wrap -mx-4  items-center mb-4"> 
                     <div class="mx-auto px-4 w-full lg:w-9/12"> 
                         <h2 class="font-medium mb-1 lg:text-mpink-500">Speisekarte</h2>
-                        <h1 class="mb-4 text-5xl">Rette mit uns Reststoffe und Baumaterialien vor dem Müll! </h1> 
+                        <h1 class="mb-4 text-3xl lg:text-4xl">Rette mit uns Reststoffe und Baumaterialien vor dem Müll! </h1> 
                         <p class="mb-4">Bei uns bekommst du lecker gebrauchtes Material von Kultureinrichtungen, Veranstaltungen und Unternehmen. Á la carte oder direkt vom Buffet - aber auf jeden Fall: 100% Bio, 100% Fairtrade.</p> 
                     </div>                     
                 </div>
                 <div class="-mx-4 flex flex-wrap justify-center justify-items-center">
                     <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 inline-block mb-4 p-12 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 w-12" fill="currentColor">
-                                    <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm13.464 12.536L20 12l-3.536-3.536L15.05 9.88 17.172 12l-2.122 2.121 1.414 1.415zM6.828 12L8.95 9.879 7.536 8.464 4 12l3.536 3.536L8.95 14.12 6.828 12zm4.416 5l3.64-10h-2.128l-3.64 10h2.128z"/>
-                                </svg></span>
+                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span>
                             <h4 class="font-bold mb-2 text-xl">Holz</h4> 
-                            <a href="#" class="hover:text-blue-800 hover:underline">Learn More</a> 
                         </div>
                     </div>
                     <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 inline-block mb-4 p-12 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 w-12" fill="currentColor">
-                                    <path d="M5.636 12.707l1.828 1.829L8.88 13.12 7.05 11.293l1.414-1.414 1.829 1.828 1.414-1.414L9.88 8.464l1.414-1.414L13.12 8.88l1.415-1.415-1.829-1.828 2.829-2.828a1 1 0 0 1 1.414 0l4.242 4.242a1 1 0 0 1 0 1.414L8.464 21.192a1 1 0 0 1-1.414 0L2.808 16.95a1 1 0 0 1 0-1.414l2.828-2.829zm8.485 5.656l4.243-4.242L21 16.757V21h-4.242l-2.637-2.637zM5.636 9.878L2.807 7.05a1 1 0 0 1 0-1.415l2.829-2.828a1 1 0 0 1 1.414 0L9.88 5.635 5.636 9.878z"/>
-                                </svg></span>
+                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span>
                             <h4 class="font-bold mb-2 text-xl">Schraubensalat</h4> 
-                            <a href="#" class="hover:text-blue-800 hover:underline">Learn More</a> 
                         </div>
                     </div>
                     <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 inline-block mb-4 p-12 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 w-12" fill="currentColor">
-                                    <path d="M15 21h-2v-3h-2v3H9v-2H7v2H4a1 1 0 0 1-1-1v-3h2v-2H3v-2h3v-2H3V9h2V7H3V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v9h9a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-3v-2h-2v2z"/>
-                                </svg></span>
+                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span>
                             <h4 class="font-bold mb-2 text-xl">Lammpenkarre</h4> 
-                            <a href="#" class="hover:text-blue-800 hover:underline">Learn More</a> 
                         </div>
                     </div>
                     <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 inline-block mb-4 p-12 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-12 w-12">
-                                    <path d="M8 5h3v9H8v3H6v-3H3V5h3V2h2v3zm10 5h3v9h-3v3h-2v-3h-3v-9h3V7h2v3z"/>
-                                </svg></span> 
+                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span> 
                             <h4 class="font-bold mb-2 text-xl">Schwimmnudeln</h4> 
-                            <a href="#" class="hover:text-blue-800 hover:underline">Learn More</a> 
                         </div>
                     </div>
                     <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 inline-block mb-4 p-12 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-12 w-12">
-                                    <path d="M8 5h3v9H8v3H6v-3H3V5h3V2h2v3zm10 5h3v9h-3v3h-2v-3h-3v-9h3V7h2v3z"/>
-                                </svg></span> 
+                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span> 
                             <h4 class="font-bold mb-2 text-xl">Filzragout</h4> 
-                            <a href="#" class="hover:text-blue-800 hover:underline">Learn More</a> 
                         </div>
                     </div>
                     <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 inline-block mb-4 p-12 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-12 w-12">
-                                    <path d="M8 5h3v9H8v3H6v-3H3V5h3V2h2v3zm10 5h3v9h-3v3h-2v-3h-3v-9h3V7h2v3z"/>
-                                </svg></span> 
+                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span> 
                             <h4 class="font-bold mb-2 text-xl">Plastikbananen</h4> 
-                            <a href="#" class="hover:text-blue-800 hover:underline">Learn More</a> 
                         </div>
                     </div>
                     <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 inline-block mb-4 p-12 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-12 w-12">
-                                    <path d="M8 5h3v9H8v3H6v-3H3V5h3V2h2v3zm10 5h3v9h-3v3h-2v-3h-3v-9h3V7h2v3z"/>
-                                </svg></span> 
+                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span> 
                             <h4 class="font-bold mb-2 text-xl">und andere Leckereien</h4> 
-                            <a href="#" class="hover:text-blue-800 hover:underline">Learn More</a> 
                         </div>
                     </div>
                 </div>                 
@@ -145,7 +129,7 @@
             <img src="assets/shapes/Form_01_magenta1.png" class="absolute right-0" data-pg-ia-scene='{"l":[{"a":"fadeInRight"}],"s":"onEnter"}'/>
             <div class="container mx-auto px-4 relative  text-center" style="background-image: url('assets/shapes/Form_15_blue#1.png');"> 
                 <h2 class="font-medium mb-1 uppercase">Unterstütze Uns</h2>
-                <h3 class="font-bold mb-4 text-4xl">Dont´t waste it - taste it!</h3> 
+                <h3 class="font-bold mb-4 text-3xl lg:text-4xl">Dont´t waste it - taste it!</h3> 
                 <p class="font-light mb-6">Unterstütze uns und fördere so ressourcenschonende Materialkreisläufe. Für ein zirkuläres und zukunftsweisendes Leipzig.</p> 
                 <div class="-mx-4 flex flex-wrap items-center justify-center mb-10"> 
                     <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
@@ -173,7 +157,7 @@
         <section class="py-20 text-center" id="partnerInnen"> 
             <img src="assets/shapes/Form_06_orange2.png" class="absolute" data-pg-ia-scene='{"l":[{"a":"rotateInDownLeft"}]}'/>
             <div class="container mx-auto px-4 relative"> 
-                <h2 class="font-bold leading-tight mb-4 text-4xl">Auf den Geschmack gekommen?</h2> 
+                <h2 class="font-bold leading-tight mb-4 text-3xl lg:text-4xl">Auf den Geschmack gekommen?</h2> 
                 <p>Diese Unternehmen und Kulturbetriebe arbeiten bereits mit uns zusammen.</p>
                 <div class="flex flex-wrap -mx-4"> 
                     <div class="px-4 py-6 w-full sm:w-6/12 lg:w-3/12"> 
@@ -327,7 +311,7 @@
         <footer class="bg-bold_buffet-200 pt-12">
             <div class="container mx-auto px-4 relative"> 
                 <div class="flex flex-wrap -mx-4"> 
-                    <div class="mr-auto p-4 w-full xl:w-4/12"> 
+                    <div class="mr-auto p-4 w-full sm:w-1/2 lg:w-4/12"> 
                         <img src="assets/logo/MB_icon&word_White-01.png"/> 
                         <p class="mb-4">                             Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper. </p> 
                         <div class="flex-wrap inline-flex space-x-3"> 
@@ -337,7 +321,7 @@
                             <a href="mailto:hallo@materialbuffet.de" class="hover:text-color_buffet-400" aria-label="youtube"> <img src="assets/svg_shapes/email-svgrepo-com.svg" class="h-5 w-5"/></a> 
                         </div>                         
                     </div>                     
-                    <div class="p-4 w-full md:w-6/12 xl:w-4/12"> 
+                    <div class="p-4 w-full sm:w-1/2 lg:w-4/12"> 
                         <h2 class="font-bold mb-8 text-lg uppercase">Auf der Suche nach Leckerbissen?</h2> 
                         <p class="mb-4">Sagt uns was ihr braucht und wir sagen euch, wenn wir es finden. Jetzt für unseren Newsletter anmelden!</p> 
                         <form> 
