@@ -14,13 +14,13 @@
     <body class="bg-secondary_buffet-600 font-sans text-neutral_buffet-600">
         <header style="background-image: url('assets/shapes/Distress%20Press.png');" class="fixed w-full z-30"> 
             <nav class="container flex flex-wrap h-20 items-center mx-auto px-4 py-5">
-                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="fixed left-10 top-0 w-28" data-pg-ia-hide data-pg-ia='{"l":[{"trg":"mouseenter","a":"pulse"},{"trg":"mousedown","a":"bounce"}]}' data-pg-ia-scene='{"dir":"a","s_t":"start","s_s":"start","s_scroller":"$.mb-5","e_t":"end","e_target":"$.mb-5","e_s":"start","l":[{"name":"roll-In","a":"rollIn","p":"scroll"}],"s":"onLeave"}'/> 
+                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="fixed left-20 top-0 w-28" data-pg-ia-hide data-pg-ia='{"l":[{"trg":"mouseenter","a":"pulse"},{"trg":"mousedown","a":"bounce"}]}' data-pg-ia-scene='{"dir":"a","d":"100%","s_t":"start","s_s":"start","s_scroller":"$.mb-5","e_t":"end","e_target":"$#main","e_s":"start","l":[{"name":"roll-In","a":"rollIn","p":"scroll"}],"s":"auto"}'/> 
                 <div class="hidden ml-auto space-y-2 w-full lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto" data-name="nav-menu"> 
                     <div class="flex flex-col lg:flex-row"> 
                         <a href="#" class="font-light hover:text-color_buffet-100 px-0 py-2 uppercase lg:px-4">Das Konzept</a> 
-                        <a href="#section-speisekarte" class="font-light hover:text-color_buffet-200 px-0 py-2 uppercase lg:px-4">Speisekarte</a> 
-                        <a href="#section-lageplan" class="font-light hover:text-color_buffet-400 px-0 py-2 uppercase lg:px-4">Lageplan</a> 
-                        <a href="#section-support" class="font-light hover:text-color_buffet-600 px-0 py-2 uppercase lg:px-4">Unterstützen</a> 
+                        <a href="#speisekarte" class="font-light hover:text-color_buffet-200 px-0 py-2 uppercase lg:px-4">Speisekarte</a> 
+                        <a href="#lageplan" class="font-light hover:text-color_buffet-400 px-0 py-2 uppercase lg:px-4">Lageplan</a> 
+                        <a href="#support" class="font-light hover:text-color_buffet-600 px-0 py-2 uppercase lg:px-4">Unterstützen</a> 
                     </div>                     
                 </div>                 
             </nav>             
@@ -29,11 +29,11 @@
             <img src="assets/shapes/Form_02_turquise1.png" class="absolute bottom-40 left-1/2" data-pg-ia='{"l":[{"trg":"scrolling","a":"rotateIn"}]}' data-pg-ia-hide/>
             <section class="relative"> 
                 <div class="w-full">
-                    <img src="assets/logo/MB_icon&word_Black-01.png" data-pg-ia-scene='{"dir":"a","on":"off","s":"custom","s_t":"start","s_s":"start","e_t":"end","e_s":"start","l":[{"a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"width":"10%","height":"10%"},"e":"Linear.easeNone"}]}]},"p":"scroll"}]}' class="mx-auto place-self-center w-10/12"/>
+                    <img src="assets/logo/MB_icon&word_Black-01.png" data-pg-ia-scene='{"dir":"v","on":"off","s":"custom","s_t":"start","s_s":"start","s_o":"10","e_t":"end","e_target":"$.mb-5","e_s":"start","l":[{"a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"width":"10%","height":"10%"},"e":"Linear.easeNone"}]}]},"p":"scroll"}],"s_scroller":"$.mb-5"}' class="mx-auto place-self-center w-10/12"/>
                 </div>
                 <div class="container mx-auto pt-16 px-4"> 
                     <div class="-mx-4 flex flex-wrap mx-auto mb-16"> 
-                        <div class="mb-5 px-4 w-full"> 
+                        <div class="mb-5 px-4 w-full" id="hero-text"> 
                             <h1 class="font-extrabold mb-4 text-6xl">Mahlzeit! -&nbsp;Wir sind das Materialbuffet</h1>
                             <h1 class="font-extrabold mb-4 text-5xl">dein gemeinnütziger Second-Hand-Baumarkt in Leipzig</h1> 
                             <p class="font-light leading-tight mb-6 text-2xl">Durch die Verwertung von Reststoffen vermeiden wir aktiv Müll und fördern Materialkreisläufe. Unsere Vision: eine Zentrum für gebrauchte Materialien, kreative Wiederverwendung und Ressourcenschonung in Leipzig. Yummy.</p> 
@@ -45,7 +45,7 @@
                 </div>                 
             </section>
         </main>
-        <section class="py-20 text-center" id="section-speisekarte">
+        <section class="py-20 text-center" id="speisekarte">
             <img src="assets/shapes/Form_01_blue1.png" class="absolute" data-pg-ia-scene='{"l":[{"a":"fadeInLeft"}],"s":"onEnter"}'/>
             <img src="assets/shapes/Form_03_green1.png" class="-bottom-1/2 absolute right-0 w-3/12" data-pg-ia-scene='{"l":[{"a":"fadeInRight"},{"a":"rotateIn"}]}'/> 
             <div class="container mx-auto px-4 relative"> 
@@ -123,7 +123,7 @@
                 </div>                 
             </div>             
         </section>
-        <section class="bg-gray-50 relative" id="section-lageplan"> 
+        <section class="bg-gray-50 relative" id="lageplan"> 
             <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=12.296190261840822%2C51.30547946771476%2C12.335972785949709%2C51.32640155131173&amp;layer=mapnik&amp;marker=51.31594170221118%2C12.316081523895264" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="600" class="w-full lg:absolute lg:h-full lg:inset-0 lg:z-0" title="Pinegrow location map"></iframe>
             <div class="container mx-auto px-4 relative  pb-16 lg:pb-0"> 
                 <section class="relative"> 
@@ -141,7 +141,7 @@
                 </section>                 
             </div>             
         </section>
-        <section class="py-20" id="section-support"> 
+        <section class="py-20" id="support"> 
             <img src="assets/shapes/Form_01_magenta1.png" class="absolute right-0" data-pg-ia-scene='{"l":[{"a":"fadeInRight"}],"s":"onEnter"}'/>
             <div class="container mx-auto px-4 relative  text-center" style="background-image: url('assets/shapes/Form_15_blue#1.png');"> 
                 <h2 class="font-medium mb-1 uppercase">Unterstütze Uns</h2>
@@ -170,7 +170,7 @@
                 <a href="#" class="bg-bold_buffet-300 border-black font-medium hover:shadow-xl inline-block px-24 py-2 rounded-full rounded-t-none text-center text-white uppercase">Kontaktiere Uns</a>
             </div>             
         </section>
-        <section class="py-20 text-center" id="section-partnerInnen"> 
+        <section class="py-20 text-center" id="partnerInnen"> 
             <img src="assets/shapes/Form_06_orange2.png" class="absolute" data-pg-ia-scene='{"l":[{"a":"rotateInDownLeft"}]}'/>
             <div class="container mx-auto px-4 relative"> 
                 <h2 class="font-bold leading-tight mb-4 text-4xl">Auf den Geschmack gekommen?</h2> 
