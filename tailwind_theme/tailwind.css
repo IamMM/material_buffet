@@ -643,6 +643,33 @@
 .right-0 {
       right: 0px;
 }
+.right-24 {
+      right: 6rem;
+}
+.left-40 {
+      left: 10rem;
+}
+.top-40 {
+      top: 10rem;
+}
+.bottom-28 {
+      bottom: 7rem;
+}
+.left-48 {
+      left: 12rem;
+}
+.left-60 {
+      left: 15rem;
+}
+.bottom-10 {
+      bottom: 2.5rem;
+}
+.bottom-32 {
+      bottom: 8rem;
+}
+.right-10 {
+      right: 2.5rem;
+}
 .z-30 {
       z-index: 30;
 }
@@ -748,6 +775,9 @@
 }
 .h-60 {
       height: 15rem;
+}
+.h-full {
+      height: 100%;
 }
 .w-full {
       width: 100%;
@@ -910,6 +940,10 @@
 .bg-blue-600 {
       --tw-bg-opacity: 1;
       background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+}
+.object-contain {
+      -o-object-fit: contain;
+         object-fit: contain;
 }
 .p-4 {
       padding: 1rem;
