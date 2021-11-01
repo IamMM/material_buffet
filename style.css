@@ -93,3 +93,12 @@ html {
 body {
     overflow-x: hidden;
 }
+
+#logos>div {
+    filter: grayscale(1);
+}
+
+#logos>div:hover {
+    filter: grayscale(0);
+    transition: ease-in-out;
+}
