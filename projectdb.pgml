@@ -3,15 +3,15 @@
     <dmdesigns>
         <dmdesign active>
             <dmdesignskill skill="tw.colors">
-                <dmcolor key="neutral_buffet" color="#F0EEEC" shade-600="#0e3121" shade-500="#3e4c47" shade-400="#5c7170" shade-300="#8f9790" shade-200="#d8d1c5" shade-100="#f0eeec"/>
-                <dmcolor key="color_buffet" color="#DD4E45" shade-600="#0e5aa7" shade-500="#00a5d9" shade-400="#00a07e" shade-300="#fad940" shade-200="#f2ad13" shade-100="#dd4e45"/>
-                <dmcolor key="bold_buffet" color="#de8a22" shade-600="#0069a1" shade-500="#00a7af" shade-400="#79c29f" shade-300="#ef94ad" shade-200="#f4ca42" shade-100="#de8a22"/>
-                <dmcolor key="pastel_buffet" color="#f6f2e6" shade-600="#6d8ec8" shade-500="#77bcb4" shade-400="#b8dcea" shade-300="#f3bab5" shade-200="#f5cc7e" shade-100="#f6f2e6"/>
-                <dmcolor key="pale_buffet" color="#f0eeec" shade-600="#c6ddf3" shade-500="#f0eff6" shade-400="#edf2d7" shade-300="#f3e6e8" shade-200="#fbe8c8" shade-100="#f0eeec"/>
-                <dmcolor key="primary_buffet" color="#006def" shade-600="#50bca7" shade-500="#cddd00" shade-400="#f71700" shade-300="#d925e8" shade-200="#f2be41" shade-100="#006def"/>
-                <dmcolor key="secondary_buffet" color="#ccecff" shade-600="#475359" shade-500="#879ca8" shade-400="#ccecff" shade-300="#d9f1ff" shade-200="#e6f5ff" shade-100="#f2faff"/>
+                <dmcolor key="neutral_buffet" color="#F0EEEC" shade-100="#f0eeec" shade-200="#d8d1c5" shade-300="#8f9790" shade-400="#5c7170" shade-500="#3e4c47" shade-600="#0e3121"/>
+                <dmcolor key="color_buffet" color="#DD4E45" shade-100="#dd4e45" shade-200="#f2ad13" shade-300="#fad940" shade-400="#00a07e" shade-500="#00a5d9" shade-600="#0e5aa7"/>
+                <dmcolor key="bold_buffet" color="#de8a22" shade-100="#de8a22" shade-200="#f4ca42" shade-300="#ef94ad" shade-400="#79c29f" shade-500="#00a7af" shade-600="#0069a1"/>
+                <dmcolor key="pastel_buffet" color="#f6f2e6" shade-100="#f6f2e6" shade-200="#f5cc7e" shade-300="#f3bab5" shade-400="#b8dcea" shade-500="#77bcb4" shade-600="#6d8ec8"/>
+                <dmcolor key="pale_buffet" color="#f0eeec" shade-100="#f0eeec" shade-200="#fbe8c8" shade-300="#f3e6e8" shade-400="#edf2d7" shade-500="#f0eff6" shade-600="#c6ddf3"/>
+                <dmcolor key="primary_buffet" color="#006def" shade-100="#006def" shade-200="#f2be41" shade-300="#d925e8" shade-400="#f71700" shade-500="#cddd00" shade-600="#50bca7"/>
+                <dmcolor key="secondary_buffet" color="#ccecff" shade-100="#ccecff" shade-200="#ffe4b3" shade-300="#d9c9ff" shade-400="#fce8e0" shade-500="#e8ffc7" shade-600="#f9f9f9"/>
             </dmdesignskill>
-            <dmdesignskill skill="fonts" family_1="Abril Fatface" family_2 family_3="Faro-BoldLucky" name_3="Faro-BoldLucky" h2_1 h1_1="h1" h3_1 name_4="" family_4=""></dmdesignskill>
+            <dmdesignskill skill="fonts" family_1="DMSans" family_2 family_3="Faro-BoldLucky" name_3="Faro-BoldLucky" h2_1 h1_1="h1" h3_1 name_4="" family_4=""></dmdesignskill>
             <dmdesignskill skill="background" image_for_colors="true" advanced="true" filter_blur="0" filter_brightness="100" filter_contrast="100" filter_grayscale="0" filter_hue-rotate="0" filter_invert="0" filter_opacity="100" filter_saturate="100" filter_sepia="0"></dmdesignskill>
             <dmdesignskill skill="tailwind"></dmdesignskill>
         </dmdesign>

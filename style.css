@@ -1,4 +1,4 @@
-/** FONTS FOR BODY **/
+/* * FONTS FOR BODY * */
 @font-face {
     font-family: 'DM Sans';
     src: local('DM Sans Medium'), local('DMSans-Medium'),
@@ -60,10 +60,10 @@
 }
 
 body * {
-	font-family: 'DM Sans';
+    font-family: 'DM Sans';
 }
 
-/** FONTS FOR TITLE **/
+/* * FONTS FOR TITLE * */
 @font-face {
     font-family: 'Faro-BoldLucky';
     src: local('Faro Bold Lucky'), local('Faro-BoldLucky'),
@@ -74,16 +74,22 @@ body * {
     font-display: swap;
 }
 
-h1, h2, h3, h4, h5, h6{
-	font-family: 'Faro-BoldLucky';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#menu * {
+    font-family: 'Faro-BoldLucky';
 }
 
-/** SMOOTH SCROLL **/
+/* * SMOOTH SCROLL * */
 html {
     scroll-behavior: smooth;
 }
 
-/**  HIDE OVERFLOW **/
+/* *  HIDE OVERFLOW * */
 body {
     overflow-x: hidden;
 }

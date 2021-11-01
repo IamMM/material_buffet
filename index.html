@@ -13,14 +13,14 @@
         <link rel="stylesheet" href="pgia/components/slider.css">
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
-    <body class="bg-secondary_buffet-600 font-sans text-neutral_buffet-600">
-        <header style="background-image: url('assets/shapes/Distress%20Press.png');" class="fixed w-full z-30"> 
-            <nav class="container flex flex-wrap h-20 items-center mx-auto px-4 py-5">
-                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="fixed left-20 top-0 w-28" data-pg-ia-hide data-pg-ia='{"l":[{"trg":"mouseenter","a":"pulse"},{"trg":"mousedown","a":"bounce"}]}' data-pg-ia-scene='{"dir":"a","d":"100%","s_t":"start","s_s":"start","s_scroller":"$.mb-5","e_t":"end","e_target":"$#main","e_s":"start","l":[{"name":"roll-In","a":"rollIn","p":"scroll"}],"s":"auto"}'/>
+    <body class="bg-secondary_buffet-600 font-sans text-neutral_buffet-600" data-pg-ia='{"l":[{"trg":"load","a":"fadeIn"}]}' data-pg-ia-hide>
+        <header class="w-full z-30 xl:mx-auto xl:w-8/12"> 
+            <nav class="container flex flex-wrap items-center md:mb-10 md:mt-5">
+                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="absolute h-52 left-0 top-10 top-5 z-20 md:relative" data-pg-ia='{"l":[{"trg":"now","a":"rollIn"},{"trg":"mouseenter","a":"swing"}]}'/>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 ml-auto w-6 lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-pg-ia='{"l":[{"trg":"mousedown","t":"$nav #gt# div","a":"lightSpeedIn","on":"mobile"}]}'>
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>                 
-                <div class="ml-auto space-y-2 w-full md:text-right lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto" data-name="nav-menu" id="menu" data-pg-ia-hide data-pg-ia='{"l":[{"name":"hide","trg":"mousedown_notouch","a":"slideOutRight","on":"mobile"}]}'> 
+                <div class="h-20 ml-auto px-5 space-y-2 w-full md:text-right lg:flex lg:items-center lg:space-x-4 lg:space-y-0 lg:w-auto" data-name="nav-menu" id="menu" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('assets/shapes/Distress%20Press.png');"> 
                     <div class="flex flex-col lg:flex-row"> 
                         <a href="#" class="font-light hover:text-color_buffet-100 px-0 py-2 uppercase lg:px-4">Das Konzept</a> 
                         <a href="#speisekarte" class="font-light hover:text-color_buffet-200 px-0 py-2 uppercase lg:px-4">Speisekarte</a> 
@@ -30,78 +30,72 @@
                 </div>                 
             </nav>             
         </header>
-        <main id="main" class="pt-20">
-            <img src="assets/shapes/Form_02_turquise1.png" class="absolute bottom-40 left-1/2" data-pg-ia='{"l":[{"trg":"scrolling","a":"rotateIn"}]}' data-pg-ia-hide/>
-            <section class="relative xl:h-screen xl:text-center"> 
-                <div class="space-y-2 w-full">
-                    <img src="assets/logo/MB_icon&word_Black-01.png" data-pg-ia-scene='{"dir":"v","on":"off","s":"custom","s_t":"start","s_s":"start","s_o":"10","e_t":"end","e_target":"$.mb-5","e_s":"start","l":[{"a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":1,"l":{"width":"10%","height":"10%"},"e":"Linear.easeNone"}]}]},"p":"scroll"}],"s_scroller":"$.mb-5"}' class="mx-auto place-self-center w-10/12 xl:w-6/12"/>
+        <main id="main" class="mx-auto relative xl:w-8/12">
+            <img src="assets/shapes/Form_02_turquise1.png" class="absolute bottom-0 left-1/2" data-pg-ia='{"l":[{"trg":"scrolling","a":"rotateIn"}]}' data-pg-ia-hide/>
+            <section class="relative xl:text-center"> 
+                <div style="background-image: url('assets/bilder/farbe.jpeg'); background-position: center center; background-size: cover; height: 450px;" class="mb-10 relative xl:flex-wrap-reverse">
+                    <h1 class="absolute bottom-0 inset-x-0 mb-10 text-8xl text-secondary_buffet-600 xl:absolute">material buffet</h1>
                 </div>
-                <div class="mx-auto pt-16 px-4 text-center w-full md:w-full xl:w-7/12"> 
+                <div class="mx-auto px-4 md:w-full"> 
                     <div class="-mx-4 flex flex-wrap mb-16 mx-auto"> 
-                        <div class="mb-5 w-full xl:mt-20" id="hero-text"> 
-                            <h1 class="font-extrabold mb-4 text-5xl">Mahlzeit! -&nbsp;Wir sind das Materialbuffet</h1>
-                            <h1 class="font-extrabold mb-4 text-2xl md:text-4xl">dein gemeinnütziger Second-Hand-Baumarkt in Leipzig</h1> 
-                            <p class="font-light leading-tight mb-6 text-xl">Durch die Verwertung von Reststoffen vermeiden wir aktiv Müll und fördern Materialkreisläufe. Unsere Vision: eine Zentrum für gebrauchte Materialien, kreative Wiederverwendung und Ressourcenschonung in Leipzig. Yummy.</p> 
+                        <div class="mb-5 w-full xl:mt-10" id="hero-text"> 
+                            <h1 class="font-extrabold mb-4 text-4xl text-left md:text-5xl">Mahlzeit! -&nbsp;Wir sind das Materialbuffet -&nbsp;dein gemeinnütziger Second-Hand-Baumarkt in Leipzig</h1>
+                            <h1 class="font-extrabold mb-4 text-2xl md:text-4xl"></h1> 
+                            <p class="font-light leading-tight mb-6 text-2xl text-left">Durch die Verwertung von Reststoffen vermeiden wir aktiv Müll und fördern Materialkreisläufe. Unsere Vision: eine Zentrum für gebrauchte Materialien, kreative Wiederverwendung und Ressourcenschonung in Leipzig. Yummy.</p> 
                         </div>                         
                         <div class="mx-auto">
-                            <a href="/konzept.html" class="bg-bold_buffet-300 font-medium hover:shadow-xl inline-block px-20 py-2 rounded-full rounded-tl-none text-center text-white uppercase">Erfahre mehr</a>
+                            <a href="/konzept.html" class="bg-secondary_buffet-300 font-medium hover:bg-primary_buffet-300 hover:shadow-xl inline-block px-20 py-2 rounded-full rounded-tl-none text-center text-white uppercase">Erfahre mehr</a>
                         </div>                         
                     </div>                     
                 </div>                 
             </section>
         </main>
-        <section class="py-20 text-center" id="speisekarte">
-            <img src="assets/shapes/Form_01_blue1.png" class="absolute" data-pg-ia-scene='{"l":[{"a":"fadeInLeft"}],"s":"onEnter"}'/>
-            <img src="assets/shapes/Form_03_green1.png" class="-bottom-1/2 absolute right-0 w-3/12" data-pg-ia-scene='{"l":[{"a":"fadeInRight"},{"a":"rotateIn"}]}'/> 
-            <div class="container mx-auto px-4 relative"> 
-                <div class="flex flex-wrap -mx-4  items-center mb-4"> 
-                    <div class="mx-auto px-4 w-full lg:w-9/12"> 
+        <section class="py-20 relative" id="speisekarte">
+            <img src="assets/shapes/Form_01_blue1.png" class="absolute" data-pg-ia-scene='{"s":"onEnter","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0,"x":"-25%"},"e":"Power1.easeOut"},{"t":"tween","p":0,"d":1,"l":{"autoAlpha":1,"x":"0%"},"e":"Power1.easeOut"}]}]},"name":"gentleFadeInLeft"}]}'/>
+            <img src="assets/shapes/Form_06_orange1.png" class="absolute bottom-20 right-0 w-5/12" data-pg-ia-scene='{"s":"auto","l":[{"p":"scroll","a":"rotateInDownRight"}]}'/> 
+            <div class="container mx-auto px-4 relative xl:w-8/12"> 
+                <div class="-mx-4 flex flex-wrap items-center mb-4"> 
+                    <div class="mx-auto px-4 w-full"> 
                         <h2 class="font-medium mb-1 lg:text-mpink-500">Speisekarte</h2>
-                        <h1 class="mb-4 text-3xl lg:text-4xl">Rette mit uns Reststoffe und Baumaterialien vor dem Müll! </h1> 
-                        <p class="mb-4">Bei uns bekommst du lecker gebrauchtes Material von Kultureinrichtungen, Veranstaltungen und Unternehmen. Á la carte oder direkt vom Buffet - aber auf jeden Fall: 100% Bio, 100% Fairtrade.</p> 
+                        <h1 class="mb-4 text-3xl lg:text-5xl">Rette mit uns Reststoffe und Baumaterialien vor dem Müll! </h1> 
+                        <p class="mb-4 text-2xl">Bei uns bekommst du lecker gebrauchtes Material von Kultureinrichtungen, Veranstaltungen und Unternehmen. Á la carte oder direkt vom Buffet - aber auf jeden Fall: 100% Bio, 100% Fairtrade.</p> 
                     </div>                     
                 </div>
-                <div class="-mx-4 flex flex-wrap justify-center justify-items-center">
-                    <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
-                        <div class="py-4"> 
-                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span>
-                            <h4 class="font-bold mb-2 text-xl">Holz</h4> 
+                <div class="flex flex-wrap text-center">
+                    <div class="p-4 sm:w-6/12 w-full xl:w-4/12">
+                        <div> 
+                            <span class="bg-white h-60 inline-block my-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/holz.jpeg'); background-size: cover; background-position: center center;"></span>
+                            <p class="font-bold mb-2 text-xl">Holz</p> 
                         </div>
                     </div>
-                    <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
+                    <div class="p-4 w-full sm:w-6/12 xl:w-4/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span>
-                            <h4 class="font-bold mb-2 text-xl">Schraubensalat</h4> 
+                            <span class="bg-white h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/kabel.jpeg'); background-size: cover; background-position: center center;"></span>
+                            <p class="font-bold mb-2 text-xl">Schrauben</p> 
                         </div>
                     </div>
-                    <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
+                    <div class="p-4 w-full sm:w-6/12 xl:w-4/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span>
-                            <h4 class="font-bold mb-2 text-xl">Lammpenkarre</h4> 
+                            <span class="bg-white h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/farbe.jpeg'); background-size: cover; background-position: center center;"></span>
+                            <p class="font-bold mb-2 text-xl">Farben</p> 
                         </div>
                     </div>
-                    <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
+                    <div class="p-4 w-full sm:w-6/12 xl:w-4/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span> 
-                            <h4 class="font-bold mb-2 text-xl">Schwimmnudeln</h4> 
+                            <span class="bg-white h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span> 
+                            <p class="font-bold mb-2 text-xl">Kabel &amp; Lampen</p> 
                         </div>
                     </div>
-                    <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
+                    <div class="p-4 w-full sm:w-6/12 xl:w-4/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span> 
-                            <h4 class="font-bold mb-2 text-xl">Filzragout</h4> 
+                            <span class="bg-white h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span> 
+                            <p class="font-bold mb-2 text-xl">Stoffe</p> 
                         </div>
                     </div>
-                    <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
+                    <div class="p-4 w-full sm:w-6/12 xl:w-4/12">
                         <div class="py-4"> 
-                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span> 
-                            <h4 class="font-bold mb-2 text-xl">Plastikbananen</h4> 
-                        </div>
-                    </div>
-                    <div class="w-full p-4  xl:w-3/12 sm:w-6/12">
-                        <div class="py-4"> 
-                            <span class="bg-white border-4 h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span> 
-                            <h4 class="font-bold mb-2 text-xl">und andere Leckereien</h4> 
+                            <span class="bg-white h-60 inline-block mb-4 p-12 rounded-full w-60" style="background-image: url('assets/bilder/_MG_0110.jpeg'); background-size: cover; background-position: center center;"></span> 
+                            <p class="font-bold mb-2 text-xl">und andere Leckereien</p> 
                         </div>
                     </div>
                 </div>                 
@@ -125,27 +119,27 @@
                 </section>                 
             </div>             
         </section>
-        <section class="py-20" id="support"> 
-            <img src="assets/shapes/Form_01_magenta1.png" class="absolute right-0" data-pg-ia-scene='{"l":[{"a":"fadeInRight"}],"s":"onEnter"}'/>
-            <div class="container mx-auto px-4 relative  text-center" style="background-image: url('assets/shapes/Form_15_blue#1.png');"> 
-                <h2 class="font-medium mb-1 uppercase">Unterstütze Uns</h2>
-                <h3 class="font-bold mb-4 text-3xl lg:text-4xl">Dont´t waste it - taste it!</h3> 
-                <p class="font-light mb-6">Unterstütze uns und fördere so ressourcenschonende Materialkreisläufe. Für ein zirkuläres und zukunftsweisendes Leipzig.</p> 
+        <section class="mx-auto py-20 xl:w-8/12" id="support"> 
+            <img src="assets/shapes/Form_01_magenta1.png" class="absolute right-0" data-pg-ia-scene='{"l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0,"x":"25%"},"e":"Power1.easeOut"},{"t":"tween","p":0,"d":1,"l":{"autoAlpha":1,"x":"0%"},"e":"Power1.easeOut"}]}]}}],"s":"onEnter"}'/>
+            <div class="container mx-auto px-4 relative text-center" style="background-image: url('assets/shapes/Form_15_blue#1.png');"> 
+                <h2 class="font-medium mb-1 uppercase xl:text-left">Unterstütze Uns</h2>
+                <h3 class="font-bold mb-4 text-3xl lg:text-4xl xl:text-left">Dont´t waste it - taste it!</h3> 
+                <p class="font-light mb-6 text-2xl xl:text-left">Unterstütze uns und fördere so ressourcenschonende Materialkreisläufe. Für ein zirkuläres und zukunftsweisendes Leipzig.</p> 
                 <div class="-mx-4 flex flex-wrap items-center justify-center mb-10"> 
                     <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
-                        <div class="bg-white px-10 py-12 rounded-lg shadow-lg"> 
+                        <div class="bg-white px-10 py-12 rounded-3xl shadow-lg"> 
                             <h3 class="font-bold mb-4 text-2xl uppercase">Material Spenden</h3> 
                             <p class="pb-10">Du bist ein Kulturbetrieb, Unternehmen oder eine Veranstaltung und hast Materialien übrig, die zu schade für die Tonne sind? Wir nehmen deine Reststoffe!</p> 
                         </div>                         
                     </div>                     
                     <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
-                        <div class="bg-white px-10 py-12 rounded-lg shadow-lg"> 
+                        <div class="bg-white px-10 py-12 rounded-3xl shadow-lg"> 
                             <h3 class="font-bold mb-4 text-2xl uppercase">Moneten Spenden</h3> 
                             <p class="pb-10">Du bist ein Kulturbetrieb, Unternehmen oder eine Veranstaltung und hast Materialien übrig, die zu schade für die Tonne sind? Wir nehmen deine Reststoffe!</p> 
                         </div>                         
                     </div>                     
                     <div class="p-4 w-full md:w-6/12 lg:w-4/12"> 
-                        <div class="bg-white px-10 py-12 rounded-lg shadow-lg"> 
+                        <div class="bg-white px-10 py-12 rounded-3xl shadow-lg"> 
                             <h3 class="font-bold mb-4 text-2xl uppercase">Mitglied werden</h3> 
                             <p class="pb-10">Du bist ein Kulturbetrieb, Unternehmen oder eine Veranstaltung und hast Materialien übrig, die zu schade für die Tonne sind? Wir nehmen deine Reststoffe!</p> 
                         </div>                         
@@ -155,7 +149,7 @@
             </div>             
         </section>
         <section class="py-20 text-center" id="partnerInnen"> 
-            <img src="assets/shapes/Form_06_orange2.png" class="absolute" data-pg-ia-scene='{"l":[{"a":"rotateInDownLeft"}]}'/>
+            <img src="assets/shapes/Form_04_turquise1.png" class="absolute" data-pg-ia-scene='{"l":[{"a":"rotateInDownLeft"}]}'/>
             <div class="container mx-auto px-4 relative"> 
                 <h2 class="font-bold leading-tight mb-4 text-3xl lg:text-4xl">Auf den Geschmack gekommen?</h2> 
                 <p>Diese Unternehmen und Kulturbetriebe arbeiten bereits mit uns zusammen.</p>
@@ -308,18 +302,11 @@
                 </div>
             </div>             
         </section>
-        <footer class="bg-bold_buffet-200 pt-12">
+        <footer class="bg-primary_buffet-200 pt-12">
             <div class="container mx-auto px-4 relative"> 
                 <div class="flex flex-wrap -mx-4"> 
                     <div class="mr-auto p-4 w-full sm:w-1/2 lg:w-4/12"> 
-                        <img src="assets/logo/MB_icon&word_White-01.png"/> 
-                        <p class="mb-4">                             Duis pharetra venenatis felis, ut tincidunt ipsum consequat nec. Fusce et porttitor libero, eu aliquam nisi. Nam finibus ullamcorper semper. </p> 
-                        <div class="flex-wrap inline-flex space-x-3"> 
-                            <a href="https://www.instagram.com/materialbuffet_ev/?fbclid=IwAR3qxLQ41AZWTqjhaijiiX3cZEQ2eZEtahbVsooAfsbeJ_uxGuU4Edvyyng" class="hover:text-blue-600 hover:text-bold_buffet-300" aria-label="instagram"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"> 
-                                    <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/> 
-                                </svg></a>
-                            <a href="mailto:hallo@materialbuffet.de" class="hover:text-color_buffet-400" aria-label="youtube"> <img src="assets/svg_shapes/email-svgrepo-com.svg" class="h-5 w-5"/></a> 
-                        </div>                         
+                        <img src="assets/logo/MB_icon&word_White-01.png"/>                          
                     </div>                     
                     <div class="p-4 w-full sm:w-1/2 lg:w-4/12"> 
                         <h2 class="font-bold mb-8 text-lg uppercase">Auf der Suche nach Leckerbissen?</h2> 
@@ -334,6 +321,12 @@
                                 </button>                                 
                             </div>                             
                         </form>                         
+                        <div class="flex-wrap inline-flex mx-auto space-x-3 w-full"> 
+                            <a href="https://www.instagram.com/materialbuffet_ev/?fbclid=IwAR3qxLQ41AZWTqjhaijiiX3cZEQ2eZEtahbVsooAfsbeJ_uxGuU4Edvyyng" class="hover:text-blue-600 hover:text-bold_buffet-300" aria-label="instagram"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"> 
+                                    <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/> 
+                                </svg></a>
+                            <a href="mailto:hallo@materialbuffet.de" class="hover:text-color_buffet-400" aria-label="youtube"> <img src="assets/svg_shapes/email-svgrepo-com.svg" class="h-5 w-5"/></a> 
+                        </div>
                     </div>                     
                 </div>                 
                 <div class="py-4 text-sm"> 
