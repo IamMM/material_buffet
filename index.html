@@ -21,7 +21,7 @@
             <nav class="flex flex-wrap md:mb-5">
                 <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="absolute h-52 hidden left-0 z-20 md:block md:relative" data-pg-ia='{"l":[{"trg":"now","a":"rollIn"},{"trg":"mouseenter","a":"swing"}]}'/>
                 <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_White-01.png" class="absolute block h-52 left-0 md:hidden md:relative top-10 top-5 z-20" data-pg-ia='{"l":[{"trg":"now","a":"rollIn"},{"trg":"mouseenter","a":"swing"}]}'/> 
-                <div id="menu" class="menu absolute flex ml-auto mt-10 space-y-2 w-full z-10 md:h-20 md:items-center md:relative md:space-x-1 md:space-y-0 md:text-right md:w-auto" data-name="nav-menu" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('assets/shapes/Distress%20Press.png');"> 
+                <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 w-full z-10 md:h-20 md:items-center md:relative md:space-x-1 md:space-y-0 md:text-right md:w-auto" data-name="nav-menu" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('assets/shapes/Distress%20Press.png');"> 
                     <a onclick="toggle()" href="#konzept" class="font-light hover:text-color_buffet-100 px-0 py-2 transition-colors uppercase md:px-4">Das Konzept</a> 
                     <a onclick="toggle()" href="#speisekarte" class="font-light hover:text-color_buffet-200 px-0 py-2 transition-colors uppercase md:px-4">Speisekarte</a> 
                     <a onclick="toggle()" href="#lageplan" class="font-light hover:text-color_buffet-400 px-0 py-2 transition-colors uppercase md:px-4">Lageplan</a> 
@@ -51,7 +51,7 @@
         </main>
         <section class="overflow-x-hidden py-20 relative" id="speisekarte">
             <img src="assets/shapes/Form_01_blue1.png" class="absolute overflow-hidden" data-pg-ia-scene='{"s":"onEnter","l":[{"name":"gentleFadeInLeft","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0,"x":"-25%"},"e":"Power1.easeOut"},{"t":"tween","p":0,"d":1,"l":{"autoAlpha":1,"x":"0%"},"e":"Power1.easeOut"}]}]}}]}'/>
-            <img src="assets/shapes/Form_06_orange1.png" class="absolute bottom-20 md:w-6/12 right-0 w-8/12" data-pg-ia-scene='{"s":"auto","l":[{"p":"scroll","a":"rotateInDownRight"}]}'/> 
+            <img src="assets/shapes/Form_06_orange1.png" class="absolute bottom-20 right-0 w-8/12 md:w-5/12 xl:w-4/12" data-pg-ia-scene='{"s":"auto","l":[{"p":"scroll","a":"rotateInDownRight"}]}'/> 
             <div class="container mx-auto relative xl:w-8/12 2xl:w-7/12"> 
                 <div class="flex flex-wrap items-center mb-4 px-4"> 
                     <div class="mx-auto w-full"> 
@@ -101,11 +101,11 @@
                 </div>                 
             </div>             
         </section>
-        <section class="bg-gray-50 items-center mx-auto relative xl:w-9/12 2xl:w-7/12" id="lageplan"> 
+        <section class="bg-gray-50 items-center mx-auto my-20 relative lg:my-20 xl:w-9/12 2xl:w-7/12" id="lageplan"> 
             <img class="-right-20 absolute hidden z-20 md:block xl:right-20" src="assets/shapes/Form_05_red.png" data-pg-ia-scene='{"l":[{"a":"lightSpeedIn"}]}'/>
-            <img src="assets/bilder/anfahrt.png" class="hidden xl:block xl:left-20 xl:relative"/>
-            <div class="w-full lg:w-6/12 xl:absolute xl:bottom-0 xl:right-10 xl:w-5/12"> 
-                <div class="bg-white p-10 xl:relative shadow-xl sm:p-16 z-10"> 
+            <img src="assets/bilder/anfahrt.png" class="hidden lg:block lg:left-10 lg:relative xl:block xl:left-20"/>
+            <div class="w-full lg:absolute lg:bottom-0 lg:right-10 lg:w-6/12 xl:w-5/12"> 
+                <div class="bg-white p-10 shadow-xl z-10 sm:p-16 lg:relative xl:relative"> 
                     <h2 class="font-bold leading-tight mb-6 text-2xl uppercase">So findest du uns</h2> 
                     <p class="mb-2">Du willst dir den Bauch vollschlagen? Dann besuch uns in der ehemaligen Kantine in der Diezmannstraße 20, Haus 3. </p>
                     <p class="mb-2">Jeden Freitag zwischen 10 und 18 Uhr.</p>
@@ -123,19 +123,19 @@
                 <div class="grid grif-col-1 md:grid-cols-3 fitems-center justify-center mb-10"> 
                     <a href=""><div class="p-4"> 
                             <div class="bg-white px-10 py-12 rounded-3xl shadow-lg transition duration-500 ease-in-out transform hover:bg-secondary_buffet-300 hover:shadow-xl hover:-translate-y-1 hover:scale-110"> 
-                                <h3 class="font-bold mb-4 text-2xl uppercase">Material Spenden</h3> 
+                                <h3 class="font-bold mb-4 text-2xl uppercase">Material <br>Spenden</h3> 
                                 <p class="pb-10">Du bist ein Kulturbetrieb, Unternehmen oder eine Veranstaltung und hast Materialien übrig, die zu schade für die Tonne sind? Wir nehmen deine Reststoffe!</p> 
                             </div>                             
                         </div> </a> 
                     <div class="p-4"> 
                         <div class="bg-white duration-500 ease-in-out hover:-translate-y-1 hover:bg-secondary_buffet-400 hover:scale-110 hover:shadow-xl px-10 py-12 rounded-3xl shadow-lg transform transition"> 
-                            <h3 class="font-bold mb-4 text-2xl uppercase">Moneten Spenden</h3> 
+                            <h3 class="font-bold mb-4 text-2xl uppercase">Moneten <br>Spenden</h3> 
                             <p class="pb-10">Mit deiner Spende unterstützt du uns dabei, kreative Wiederverwendung in die Mitte der Gesellschaft zu tragen.</p> 
                         </div>
                     </div>                     
                     <div class="p-4"> 
                         <div class="bg-white duration-500 ease-in-out hover:-translate-y-1 hover:bg-secondary_buffet-500 hover:scale-110 hover:shadow-xl px-10 py-12 rounded-3xl shadow-lg transform transition"> 
-                            <h3 class="font-bold mb-4 text-2xl uppercase">Mitglied werden</h3> 
+                            <h3 class="font-bold mb-4 text-2xl uppercase">Mitglied <br> werden</h3> 
                             <p class="pb-10">Werde Mitglied des gemeinnützigen Materialbuffet e.V., unterstütze unsere ideelen Zwecke und profitiere von unseren Angeboten.</p> 
                         </div>                         
                     </div>                     

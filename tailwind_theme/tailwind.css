@@ -676,6 +676,10 @@
       margin-top: 1rem;
       margin-bottom: 1rem;
 }
+.my-20 {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+}
 .ml-auto {
       margin-left: auto;
 }
@@ -969,6 +973,10 @@
       padding-top: 3rem;
       padding-bottom: 3rem;
 }
+.px-5 {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+}
 .pt-16 {
       padding-top: 4rem;
 }
@@ -977,6 +985,9 @@
 }
 .pb-10 {
       padding-bottom: 2.5rem;
+}
+.pl-5 {
+      padding-left: 1.25rem;
 }
 .text-left {
       text-align: left;
@@ -1217,6 +1228,14 @@ body, html {min-height: 100vh;}
             width: 15rem;
       }
 
+      .md\:w-4\/12 {
+            width: 33.333333%;
+      }
+
+      .md\:w-5\/12 {
+            width: 41.666667%;
+      }
+
       .md\:flex-1 {
             flex: 1 1 0%;
       }
@@ -1288,6 +1307,43 @@ body, html {min-height: 100vh;}
       }
 }                    
 @media (min-width: 1024px) {
+
+      .lg\:absolute {
+            position: absolute;
+      }
+
+      .lg\:relative {
+            position: relative;
+      }
+
+      .lg\:bottom-0 {
+            bottom: 0px;
+      }
+
+      .lg\:right-10 {
+            right: 2.5rem;
+      }
+
+      .lg\:left-10 {
+            left: 2.5rem;
+      }
+
+      .lg\:my-20 {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+      }
+
+      .lg\:mt-10 {
+            margin-top: 2.5rem;
+      }
+
+      .lg\:mt-20 {
+            margin-top: 5rem;
+      }
+
+      .lg\:block {
+            display: block;
+      }
 
       .lg\:flex {
             display: flex;
