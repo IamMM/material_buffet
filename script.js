@@ -5,3 +5,18 @@ mybutton = document.getElementById("topBtn");
 function topFunction() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+
+// MOBILE MENU
+
+
+/*
+ * Toggles on and off the 'active' class on the menu
+ * and the toggler button.
+ */
+function toggle() {
+	var element = document.getElementById("toggler");
+	var menu = document.getElementById('menu');
+	element.classList.toggle("active");
+	menu.classList.toggle("active");
+}
