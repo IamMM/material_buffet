@@ -616,6 +616,14 @@
       left: 0px;
       right: 0px;
 }
+.inset-y-10 {
+      top: 2.5rem;
+      bottom: 2.5rem;
+}
+.inset-y-0 {
+      top: 0px;
+      bottom: 0px;
+}
 .right-2 {
       right: 0.5rem;
 }
@@ -651,6 +659,9 @@
 }
 .-right-20 {
       right: -5rem;
+}
+.bottom-10 {
+      bottom: 2.5rem;
 }
 .z-10 {
       z-index: 10;
@@ -810,6 +821,9 @@
 }
 .flex-wrap {
       flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+      flex-wrap: wrap-reverse;
 }
 .items-center {
       align-items: center;
@@ -1176,12 +1190,25 @@ body, html {min-height: 100vh;}
 }                    
 @media (min-width: 768px) {
 
+      .md\:absolute {
+            position: absolute;
+      }
+
       .md\:relative {
             position: relative;
       }
 
+      .md\:inset-x-0 {
+            left: 0px;
+            right: 0px;
+      }
+
       .md\:top-0 {
             top: 0px;
+      }
+
+      .md\:bottom-0 {
+            bottom: 0px;
       }
 
       .md\:col-span-1 {
@@ -1194,6 +1221,10 @@ body, html {min-height: 100vh;}
 
       .md\:-ml-4 {
             margin-left: -1rem;
+      }
+
+      .md\:mb-10 {
+            margin-bottom: 2.5rem;
       }
 
       .md\:block {

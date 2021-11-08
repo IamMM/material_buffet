@@ -19,8 +19,7 @@
         </div>
         <header class="w-full z-30 xl:mx-auto xl:w-8/12 2xl:w-7/12"> 
             <nav class="flex flex-wrap md:mb-5">
-                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="absolute h-52 hidden left-0 z-20 md:block md:relative" data-pg-ia='{"l":[{"trg":"now","a":"rollIn"},{"trg":"mouseenter","a":"swing"}]}'/>
-                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_White-01.png" class="absolute block h-52 left-0 md:hidden md:relative top-10 top-5 z-20" data-pg-ia='{"l":[{"trg":"now","a":"rollIn"},{"trg":"mouseenter","a":"swing"}]}'/> 
+                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="absolute h-52 hidden left-0 z-20 md:block md:relative" data-pg-ia='{"l":[{"trg":"load","a":"rollIn"},{"trg":"mouseenter","a":"swing"}]}' data-pg-ia-hide/> 
                 <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 w-full z-10 md:h-20 md:items-center md:relative md:space-x-1 md:space-y-0 md:text-right md:w-auto" data-name="nav-menu" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('assets/shapes/Distress%20Press.png');"> 
                     <a onclick="toggle()" href="#konzept" class="font-light hover:text-color_buffet-100 px-0 py-2 transition-colors uppercase md:px-4">Das Konzept</a> 
                     <a onclick="toggle()" href="#speisekarte" class="font-light hover:text-color_buffet-200 px-0 py-2 transition-colors uppercase md:px-4">Speisekarte</a> 
@@ -32,8 +31,9 @@
         <main id="main" class="mx-auto overflow-hidden relative xl:w-8/12 2xl:w-7/12">
             <img src="assets/shapes/Form_02_turquise1.png" class="absolute bottom-0 left-1/2 overflow-hidden" data-pg-ia='{"l":[{"trg":"scrolling","a":"rotateIn"}]}' data-pg-ia-hide/>
             <section class="relative xl:text-center"> 
-                <div style="background-image: url('assets/bilder/farbe.jpeg'); background-position: center center; background-size: cover; height: 450px;" class="mb-10 relative xl:flex-wrap-reverse">
-                    <h1 class="absolute bottom-0 inset-x-0 mb-10 text-6xl text-secondary_buffet-600 md:text-8xl xl:absolute">material buffet</h1>
+                <div style="background-image: url('assets/bilder/farbe.jpeg'); background-position: center center; background-size: cover; height: 450px;" class="flex flex-wrap-reverse mb-10 relative">
+                    <h1 class="md:absolute md:bottom-0 md:inset-x-0 md:mb-10 md:text-8xl text-6xl text-secondary_buffet-600">material buffet</h1>
+                    <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_White-01.png" class="block bottom-20 h-52 left-0 z-20 md:hidden md:relative" data-pg-ia='{"l":[{"trg":"now","a":"rollIn"},{"trg":"mouseenter","a":"swing"}]}'/>
                 </div>
                 <div class="mx-auto px-4 md:w-full" id="konzept"> 
                     <div class="flex flex-wrap mb-16 mx-auto"> 
@@ -210,6 +210,7 @@
                 </div>                 
             </div>             
         </footer>
+        <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="bottom-0 fixed left-10 w-28" data-pg-ia-hide data-pg-ia='{"l":[{"trg":"mouseenter","a":"pulse"},{"trg":"mousedown","a":"bounce"}]}' data-pg-ia-scene='{"dir":"a","s_t":"start","s_s":"start","s_scroller":"$.mb-5","e_t":"end","e_target":"$.mb-5","e_s":"start","l":[{"name":"roll-In","a":"rollIn","p":"scroll"}],"s":"onLeave"}'/>
         <script src="pgia/lib/pgia.js"></script>
     </body>
 </html>
