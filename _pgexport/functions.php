@@ -167,6 +167,9 @@ if ( ! function_exists( 'buffet_1_punkt_null_enqueue_scripts' ) ) :
     wp_deregister_style( 'buffet_1_punkt_null-tailwind' );
     wp_enqueue_style( 'buffet_1_punkt_null-tailwind', 'https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css', false, null, 'all');
 
+    wp_deregister_style( 'buffet_1_punkt_null-all' );
+    wp_enqueue_style( 'buffet_1_punkt_null-all', get_template_directory_uri() . '/assets/fontawesome/css/all.css', false, null, 'all');
+
     wp_deregister_style( 'buffet_1_punkt_null-tailwind-1' );
     wp_enqueue_style( 'buffet_1_punkt_null-tailwind-1', get_template_directory_uri() . '/tailwind_theme/tailwind.css', false, null, 'all');
 

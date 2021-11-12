@@ -1,12 +1,12 @@
-<?php get_header(); ?>
+<?php get_header( 'page' ); ?>
 
         <div id="toggler" class="menu__toggler fixed flex md:hidden" onclick="toggle()">
             <span></span>
         </div>
         <header class="w-full z-30 xl:mx-auto xl:w-8/12 2xl:w-7/12"> 
             <nav class="flex flex-wrap md:mb-5">
-                <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="absolute h-52 hidden left-0 z-20 md:block md:relative" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}" data-pg-ia-hide=""></a> 
-                <div id="menu" class="absolute flex md:h-20 md:items-center md:relative md:space-x-1 md:space-y-0 md:text-right md:w-auto menu ml-auto mt-10 pl-5 space-y-2 w-full z-10" data-name="nav-menu" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/shapes/Distress%20Press.png');"> 
+                <img onclick="topFunction()" id="topBtn" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="absolute h-52 hidden left-0 z-20 md:block md:relative" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}" data-pg-ia-hide=""> 
+                <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 w-full z-10 md:h-20 md:items-center md:relative md:space-x-1 md:space-y-0 md:text-right md:w-auto" data-name="nav-menu" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/shapes/Distress%20Press.png');"> 
                     <a onclick="toggle()" href="#konzept" class="font-light hover:text-color_buffet-100 px-0 py-2 transition-colors uppercase md:px-4"><?php _e( 'Das Konzept', 'buffet_1_punkt_null' ); ?></a> 
                     <a onclick="toggle()" href="#speisekarte" class="font-light hover:text-color_buffet-200 px-0 py-2 transition-colors uppercase md:px-4"><?php _e( 'Speisekarte', 'buffet_1_punkt_null' ); ?></a> 
                     <a onclick="toggle()" href="#lageplan" class="font-light hover:text-color_buffet-400 px-0 py-2 transition-colors uppercase md:px-4"><?php _e( 'Lageplan', 'buffet_1_punkt_null' ); ?></a> 
@@ -29,7 +29,7 @@
                             <p class="font-light leading-tight mb-6 text-2xl text-left"><?php _e( 'Durch die Verwertung von Reststoffen vermeiden wir Müll und fördern Materialkreisläufe. Unsere Vision: ein Zentrum für gebrauchte Materialien, kreative Wiederverwendung und Ressourcenschonung in Leipzig. Yummy.', 'buffet_1_punkt_null' ); ?></p> 
                         </div>                         
                         <div class="mx-auto">
-                            <a href="/konzept" class="bg-secondary_buffet-300 font-medium inline-block px-20 py-2 rounded-full rounded-tl-none text-center text-white uppercase transition duration-500 ease-in-out transform hover:bg-primary_buffet-300 hover:shadow-xl hover:-translate-y-1 hover:scale-110"><?php _e( 'Erfahre mehr', 'buffet_1_punkt_null' ); ?></a>
+                            <a href="/konzept.html" class="bg-secondary_buffet-300 font-medium inline-block px-20 py-2 rounded-full rounded-tl-none text-center text-white uppercase transition duration-500 ease-in-out transform hover:bg-primary_buffet-300 hover:shadow-xl hover:-translate-y-1 hover:scale-110"><?php _e( 'Erfahre mehr', 'buffet_1_punkt_null' ); ?></a>
                         </div>                         
                     </div>                     
                 </div>                 
@@ -107,17 +107,17 @@
                 <h3 class="font-bold mb-4 text-3xl lg:text-4xl"><?php _e( 'Dont´t waste it - taste it!', 'buffet_1_punkt_null' ); ?></h3> 
                 <p class="font-light mb-6 text-2xl"><?php _e( 'Unterstütze unseren gemeinnützigen Verein und fördere so ressourcenschonende Materialkreisläufe. Für ein zukunftsweisendes Leipzig.', 'buffet_1_punkt_null' ); ?></p> 
                 <div class="fitems-center grid grif-col-1 justify-center mb-10 md:grid-cols-2 md:text-center"> 
-                    <a href="/material-spenden"><div class="p-4"> 
+                    <a href=""><div class="p-4"> 
                             <div class="bg-white px-10 py-12 rounded-3xl shadow-lg transition duration-500 ease-in-out transform hover:bg-secondary_buffet-300 hover:shadow-xl hover:-translate-y-1 hover:scale-110"> 
                                 <h3 class="font-bold mb-4 text-2xl uppercase"><?php _e( 'Material', 'buffet_1_punkt_null' ); ?> <br><?php _e( 'Spenden', 'buffet_1_punkt_null' ); ?></h3> 
                                 <p class="pb-10"><?php _e( 'Du bist ein Kulturbetrieb, Unternehmen oder eine Veranstaltung und hast Materialien übrig, die zu schade für die Tonne sind? Wir nehmen deine Reststoffe!', 'buffet_1_punkt_null' ); ?></p> 
                             </div>                             
                         </div> </a> 
                     <div class="p-4"> 
-                        <a href="/moneten-spenden"><div class="bg-white duration-500 ease-in-out hover:-translate-y-1 hover:bg-secondary_buffet-400 hover:scale-110 hover:shadow-xl px-10 py-12 rounded-3xl shadow-lg transform transition"> 
-                                <h3 class="font-bold mb-4 text-2xl uppercase"><?php _e( 'Moneten', 'buffet_1_punkt_null' ); ?> <br><?php _e( 'Spenden', 'buffet_1_punkt_null' ); ?></h3> 
-                                <p class="pb-10"><?php _e( 'Mit deiner Spende unterstützt du unsere Arbeit. Ob einmal oder dauerhaft - jeder Euro hilft uns dabei Material zu retten und weiter zu geben!', 'buffet_1_punkt_null' ); ?></p> 
-                            </div></a>
+                        <div class="bg-white duration-500 ease-in-out hover:-translate-y-1 hover:bg-secondary_buffet-400 hover:scale-110 hover:shadow-xl px-10 py-12 rounded-3xl shadow-lg transform transition"> 
+                            <h3 class="font-bold mb-4 text-2xl uppercase"><?php _e( 'Moneten', 'buffet_1_punkt_null' ); ?> <br><?php _e( 'Spenden', 'buffet_1_punkt_null' ); ?></h3> 
+                            <p class="pb-10"><?php _e( 'Mit deiner Spende unterstützt du unsere Arbeit. Ob einmal oder dauerhaft - jeder Euro hilft uns dabei Material zu retten und weiter zu geben!', 'buffet_1_punkt_null' ); ?></p> 
+                        </div>
                     </div>                     
                 </div>                 
             </div>             
@@ -158,14 +158,16 @@
                         <p><b><?php _e( 'BIC:', 'buffet_1_punkt_null' ); ?></b> <?php _e( 'GENODEM1GLS&nbsp;', 'buffet_1_punkt_null' ); ?></p>
                         <p><b><?php _e( 'Bank:', 'buffet_1_punkt_null' ); ?></b> <?php _e( 'GLS Gemeinschaftsbank eG', 'buffet_1_punkt_null' ); ?> </p>
                         <p><b><?php _e( 'Kontoinhaber:', 'buffet_1_punkt_null' ); ?></b> <?php _e( 'Materialbuffet e.V.', 'buffet_1_punkt_null' ); ?></p>
-                        <img onclick="topFunction()" id="topBtn" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="bottom-28 left-5 w-28 md:bottom-20" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;pulse&quot;},{&quot;trg&quot;:&quot;mousedown&quot;,&quot;a&quot;:&quot;bounce&quot;}]}"> 
+                        <img onclick="topFunction()" id="topBtn" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="bottom-28 left-5 w-28 md:bottom-20" data-pg-ia-hide="" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;pulse&quot;},{&quot;trg&quot;:&quot;mousedown&quot;,&quot;a&quot;:&quot;bounce&quot;}]}" data-pg-ia-scene="{&quot;dir&quot;:&quot;a&quot;,&quot;s_t&quot;:&quot;start&quot;,&quot;s_s&quot;:&quot;start&quot;,&quot;s_scroller&quot;:&quot;$.mb-5&quot;,&quot;e_t&quot;:&quot;end&quot;,&quot;e_target&quot;:&quot;$.mb-5&quot;,&quot;e_s&quot;:&quot;start&quot;,&quot;l&quot;:[{&quot;name&quot;:&quot;roll-In&quot;,&quot;a&quot;:&quot;rollIn&quot;,&quot;p&quot;:&quot;scroll&quot;}],&quot;s&quot;:&quot;onLeave&quot;}"> 
                     </div>
                     <div class="p-4 w-full sm:w-1/2 lg:w-4/12"> 
                         <h2 class="font-bold mb-8 text-lg uppercase"><?php _e( 'Folge uns auf Insta', 'buffet_1_punkt_null' ); ?></h2> 
                         <p class="mb-4"><?php _e( 'Für unser aktuelles Angebot. Dir wird das Wasser im Mund zusammenlaufen.', 'buffet_1_punkt_null' ); ?></p> 
                         <div class="flex-wrap inline-flex mx-auto space-x-3"> 
-                            <a title="Instagram" href="https://www.instagram.com/materialbuffet_ev/?fbclid=IwAR3qxLQ41AZWTqjhaijiiX3cZEQ2eZEtahbVsooAfsbeJ_uxGuU4Edvyyng" target="_blank"><i class="fa-2x fa-instagram fab hover:text-bold_buffet-300"></i></a>
-                            <a title="Email" href="mailto:hallo@materialbuffet.de"><i class="fa fa-2x fa-envelope hover:text-bold_buffet-300"></i></a>
+                            <a href="https://www.instagram.com/materialbuffet_ev/?fbclid=IwAR3qxLQ41AZWTqjhaijiiX3cZEQ2eZEtahbVsooAfsbeJ_uxGuU4Edvyyng" class="hover:text-blue-600 hover:text-bold_buffet-300" aria-label="instagram"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"> 
+                                    <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>                                     
+                                </svg></a>
+                            <a href="mailto:hallo@materialbuffet.de" class="hover:text-color_buffet-400" aria-label="youtube"> <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/svg_shapes/email-svgrepo-com.svg" class="h-5 w-5"></a> 
                         </div>
                     </div>
                     <div class="p-4 w-full sm:w-1/2 lg:w-4/12"> 
@@ -190,12 +192,12 @@
                             <p><?php _e( '&copy; 2021. All Rights Reserved - Material Buffet e.V.', 'buffet_1_punkt_null' ); ?></p> 
                         </div>                         
                         <div class="px-4 py-2 w-full sm:w-auto"> 
-                            <a href="/datenschutz" class="hover:text-mpink-500"><?php _e( 'Datenschutz', 'buffet_1_punkt_null' ); ?></a> |                      
-                            <a href="/impressum" class="hover:text-mpink-500"><?php _e( 'Impressum', 'buffet_1_punkt_null' ); ?></a> 
+                            <a href="#" class="hover:text-mpink-500"><?php _e( 'Datenschutz', 'buffet_1_punkt_null' ); ?></a> |                      
+                            <a href="#" class="hover:text-mpink-500"><?php _e( 'Impressum', 'buffet_1_punkt_null' ); ?></a> 
                         </div>                         
                     </div>                     
                 </div>                 
             </div>             
         </footer>        
 
-<?php get_footer(); ?>
+<?php get_footer( 'page' ); ?>
