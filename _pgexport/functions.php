@@ -160,6 +160,15 @@ if ( ! function_exists( 'buffet_1_punkt_null_enqueue_scripts' ) ) :
     wp_deregister_script( 'buffet_1_punkt_null-pgia' );
     wp_enqueue_script( 'buffet_1_punkt_null-pgia', get_template_directory_uri() . '/pgia/lib/pgia.js', false, null, true);
 
+    wp_deregister_script( 'buffet_1_punkt_null-flowbitebundle' );
+    wp_enqueue_script( 'buffet_1_punkt_null-flowbitebundle', 'https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js', false, null, true);
+
+    wp_deregister_script( 'buffet_1_punkt_null-clipboard' );
+    wp_enqueue_script( 'buffet_1_punkt_null-clipboard', get_template_directory_uri() . '/dist/clipboard.js', false, null, true);
+
+    wp_deregister_script( 'buffet_1_punkt_null-script' );
+    wp_enqueue_script( 'buffet_1_punkt_null-script', get_template_directory_uri() . '/script.js', false, null, true);
+
     /* Pinegrow generated Enqueue Scripts End */
 
         /* Pinegrow generated Enqueue Styles Begin */
@@ -182,6 +191,9 @@ if ( ! function_exists( 'buffet_1_punkt_null_enqueue_scripts' ) ) :
     wp_deregister_style( 'buffet_1_punkt_null-style' );
     wp_enqueue_style( 'buffet_1_punkt_null-style', get_bloginfo('stylesheet_url'), false, null, 'all');
 
+    wp_deregister_style( 'buffet_1_punkt_null-flowbite' );
+    wp_enqueue_style( 'buffet_1_punkt_null-flowbite', 'https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.min.css', false, null, 'all');
+
     /* Pinegrow generated Enqueue Styles End */
 
     }
@@ -195,6 +207,7 @@ function pgwp_sanitize_placeholder($input) { return $input; }
 /* Pinegrow generated Include Resources Begin */
 require_once "inc/custom.php";
 require_once "inc/wp_pg_helpers.php";
+require_once "inc/wp_smart_navwalker.php";
 
     /* Pinegrow generated Include Resources End */
 ?>

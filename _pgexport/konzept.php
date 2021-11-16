@@ -6,9 +6,16 @@
 <header class="w-full z-30 xl:mx-auto xl:w-8/12 2xl:w-7/12"> 
     <nav class="flex flex-wrap md:mb-5">
         <img onclick="topFunction()" id="topBtn" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="absolute h-52 hidden left-0 z-20 md:block md:relative" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}" data-pg-ia-hide=""> 
-        <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 w-full z-10 md:h-20 md:items-center md:relative md:space-x-1 md:space-y-0 md:text-right md:w-auto" data-name="nav-menu" style="background-repeat: no-repeat; background-position: left top; background-size: cover; background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/shapes/Distress%20Press.png');"> 
-            <a onclick="toggle()" href="/" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4"><?php _e( 'zurück zum Start', 'buffet_1_punkt_null' ); ?></a> 
-        </div>                 
+        <?php if ( has_nav_menu( 'primary' ) ) : ?>
+            <?php
+                PG_Smart_Walker_Nav_Menu::$options['template'] = '<a onclick="toggle()" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4 {CLASSES}" id="{ID}" {ATTRS}>{TITLE}</a>';
+                wp_nav_menu( array(
+                    'container' => '',
+                    'theme_location' => 'primary',
+                    'items_wrap' => '<div id="%1$s" class="%2$s absolute flex md:h-20 md:items-center md:relative md:space-x-1 md:space-y-0 md:text-right md:w-auto menu ml-auto mt-10 pl-5 space-y-2 w-full z-10" data-name="nav-menu" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url(\'assets/textures/Element1.png\');">%3$s</div>',
+                    'walker' => new PG_Smart_Walker_Nav_Menu()
+            ) ); ?>
+        <?php endif; ?> 
     </nav>             
 </header>
 <main id="main" class="mx-auto overflow-hidden relative xl:w-8/12 2xl:w-7/12">
@@ -20,7 +27,7 @@
     </section>
 </main>
 <section class="py-10 relative md:capitalize">
-    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/shapes/Form_01_blue1.png" class="absolute" data-pg-ia-scene="{&quot;s&quot;:&quot;onEnter&quot;,&quot;l&quot;:[{&quot;name&quot;:&quot;gentleFadeInLeft&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;set&quot;,&quot;p&quot;:0,&quot;d&quot;:0,&quot;l&quot;:{&quot;autoAlpha&quot;:0,&quot;x&quot;:&quot;-25%&quot;},&quot;e&quot;:&quot;Power1.easeOut&quot;},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:1,&quot;l&quot;:{&quot;autoAlpha&quot;:1,&quot;x&quot;:&quot;0%&quot;},&quot;e&quot;:&quot;Power1.easeOut&quot;}]}]}}]}">
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element9.png" class="absolute" data-pg-ia-scene="{&quot;s&quot;:&quot;onEnter&quot;,&quot;l&quot;:[{&quot;name&quot;:&quot;gentleFadeInLeft&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;set&quot;,&quot;p&quot;:0,&quot;d&quot;:0,&quot;l&quot;:{&quot;autoAlpha&quot;:0,&quot;x&quot;:&quot;-25%&quot;},&quot;e&quot;:&quot;Power1.easeOut&quot;},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:1,&quot;l&quot;:{&quot;autoAlpha&quot;:1,&quot;x&quot;:&quot;0%&quot;},&quot;e&quot;:&quot;Power1.easeOut&quot;}]}]}}]}">
     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/shapes/Form_06_orange1.png" class="absolute bottom-20 right-0 w-8/12 md:w-5/12 xl:w-4/12" data-pg-ia-scene="{&quot;s&quot;:&quot;auto&quot;,&quot;l&quot;:[{&quot;p&quot;:&quot;scroll&quot;,&quot;a&quot;:&quot;rotateInDownRight&quot;}]}"> 
     <div class="container mb-20 mx-auto relative xl:w-8/12 2xl:w-7/12"> 
         <div class="flex flex-wrap items-center mb-20 px-4"> 
@@ -40,7 +47,7 @@
                 <h1 class="mb-4 text-3xl w-1/2 md:text-5xl"><?php _e( 'Schmeckt Dir?', 'buffet_1_punkt_null' ); ?></h1>
             </div>
             <div class="mx-auto text-center">
-                <a href="/moneten-spenden" class="bg-secondary_buffet-300 duration-500 ease-in-out font-medium hover:-translate-y-1 hover:bg-primary_buffet-300 hover:scale-110 hover:shadow-xl inline-block px-20 py-2 rounded-full rounded-tl-none text-center text-white text-xl transform transition uppercase w-full"><?php _e( 'Unterstütze Uns', 'buffet_1_punkt_null' ); ?></a>
+                <a href="/moneten-spenden" class="bg-pastel_buffet-300 duration-500 ease-in-out font-medium hover:-translate-y-1 hover:scale-110 hover:shadow-xl inline-block px-20 py-2 rounded-full text-center text-white text-xl transform transition uppercase w-full"><?php _e( 'Unterstütze Uns', 'buffet_1_punkt_null' ); ?></a>
             </div>                     
         </div>
         <div class="flex flex-wrap items-center mb-4 px-4"> 
@@ -54,12 +61,12 @@
                 <p class="mb-4 text-2xl"><?php _e( '*Kilogramm CO2-Äquivalent = Masseinheit zur Vereinheitlichung der Klimawirkung der unterschiedlichen Treibhausgase.', 'buffet_1_punkt_null' ); ?></p> 
             </div>
             <div class="mx-auto text-center text-xl w-full">
-                <a href="/material-spenden" class="bg-secondary_buffet-300 duration-500 ease-in-out font-medium hover:-translate-y-1 hover:bg-primary_buffet-300 hover:scale-110 hover:shadow-xl inline-block px-20 py-2 rounded-full rounded-tl-none text-center text-white text-xl transform transition uppercase"><?php _e( 'Jetzt Material spenden und CO2 sparen', 'buffet_1_punkt_null' ); ?></a>
+                <a href="/material-spenden" class="bg-pastel_buffet-300 duration-500 ease-in-out font-medium hover:-translate-y-1 hover:scale-110 hover:shadow-xl inline-block px-20 py-2 rounded-full text-center text-white text-xl transform transition uppercase"><?php _e( 'Jetzt Material spenden und CO2 sparen', 'buffet_1_punkt_null' ); ?></a>
             </div>                     
         </div>
     </div>             
 </section>
-<footer class="bg-primary_buffet-200 pt-12">
+<footer class="bg-pastel_buffet-500 pt-12">
     <div class="container mx-auto px-4 relative"> 
         <div class="flex flex-wrap -mx-4"> 
             <div class="p-4 w-full sm:w-1/2 lg:w-4/12"> 
@@ -71,13 +78,11 @@
                 <img onclick="topFunction()" id="topBtn" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="bottom-28 left-5 w-28 md:bottom-20" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;pulse&quot;},{&quot;trg&quot;:&quot;mousedown&quot;,&quot;a&quot;:&quot;bounce&quot;}]}"> 
             </div>
             <div class="p-4 w-full sm:w-1/2 lg:w-4/12"> 
-                <h2 class="font-bold mb-8 text-lg uppercase"><?php _e( 'Folge uns auf Insta', 'buffet_1_punkt_null' ); ?></h2> 
+                <h2 class="font-bold mb-8 text-lg uppercase"><?php _e( 'Folge uns auf Insta', 'buffet_1_punkt_null' ); ?><br></h2> 
                 <p class="mb-4"><?php _e( 'Für unser aktuelles Angebot. Dir wird das Wasser im Mund zusammenlaufen.', 'buffet_1_punkt_null' ); ?></p> 
                 <div class="flex-wrap inline-flex mx-auto space-x-3"> 
-                    <a href="https://www.instagram.com/materialbuffet_ev/?fbclid=IwAR3qxLQ41AZWTqjhaijiiX3cZEQ2eZEtahbVsooAfsbeJ_uxGuU4Edvyyng" class="hover:text-blue-600 hover:text-bold_buffet-300" aria-label="instagram"> <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"> 
-                            <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>                                     
-                        </svg></a>
-                    <a href="mailto:hallo@materialbuffet.de" class="hover:text-color_buffet-400" aria-label="youtube"> <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/svg_shapes/email-svgrepo-com.svg" class="h-5 w-5"></a> 
+                    <a title="Instagram" href="https://www.instagram.com/materialbuffet_ev/?fbclid=IwAR3qxLQ41AZWTqjhaijiiX3cZEQ2eZEtahbVsooAfsbeJ_uxGuU4Edvyyng" target="_blank"><i class="fa-2x fa-instagram fab hover:text-bold_buffet-300"></i></a>
+                    <a title="Email" href="mailto:hallo@materialbuffet.de"><i class="fa fa-2x fa-envelope hover:text-bold_buffet-300"></i></a>
                 </div>
             </div>
             <div class="p-4 w-full sm:w-1/2 lg:w-4/12"> 
@@ -95,6 +100,9 @@
                 </form>                         
             </div>                     
         </div>                 
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element10.png" class="w-8/12" data-pg-ia-scene='{"s":"onEnter","d":"100%","l":[{"a":"fadeInRight"}],"o":"-200px"}'/>
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element10.png" class="ml-40 w-8/12" data-pg-ia-scene='{"s":"onEnter","d":"60%","l":[{"a":"fadeInRight"}],"o":"-200px"}'/>
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element10.png" class="ml-80 w-8/12" data-pg-ia-scene='{"s":"onEnter","o":"-200px","l":[{"a":"fadeInRight"}],"d":"50%"}'/>
         <div class="mt-24 py-4 text-sm md:mt-0"> 
             <hr class="border-gray-400 mb-4"> 
             <div class="flex flex-wrap -mx-4 items-center"> 
@@ -102,8 +110,8 @@
                     <p><?php _e( '&copy; 2021. All Rights Reserved - Material Buffet e.V.', 'buffet_1_punkt_null' ); ?></p> 
                 </div>                         
                 <div class="px-4 py-2 w-full sm:w-auto"> 
-                    <a href="#" class="hover:text-mpink-500"><?php _e( 'Datenschutz', 'buffet_1_punkt_null' ); ?></a> |                      
-                    <a href="#" class="hover:text-mpink-500"><?php _e( 'Impressum', 'buffet_1_punkt_null' ); ?></a> 
+                    <a href="/datenschutz" class="hover:text-mpink-500"><?php _e( 'Datenschutz', 'buffet_1_punkt_null' ); ?></a> |                      
+                    <a href="/impressum" class="hover:text-mpink-500"><?php _e( 'Impressum', 'buffet_1_punkt_null' ); ?></a> 
                 </div>                         
             </div>                     
         </div>                 

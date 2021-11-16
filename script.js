@@ -1,4 +1,4 @@
-//Get the top button:
+// Get the top button:
 mybutton = document.getElementById("topBtn");
 
 // When the user clicks on the button, scroll to the top of the document
@@ -6,10 +6,10 @@ function topFunction() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+// COPY TO CLIPBOARD
+var clipboard = new ClipboardJS('.coordinates');
 
 // MOBILE MENU
-
-
 /*
  * Toggles on and off the 'active' class on the menu
  * and the toggler button.
