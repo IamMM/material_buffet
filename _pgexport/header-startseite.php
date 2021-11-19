@@ -8,5 +8,5 @@
         <meta content="Pinegrow Web Editor" name="generator">
         <?php wp_head(); ?>
     </head>
-    <body class="bg-pale_buffet-100 font-sans overflow-x-hidden text-neutral_buffet-600 <?php echo implode(' ', get_body_class()); ?>" data-pg-ia='{"l":[{"trg":"load","a":"fadeIn"}]}' data-pg-ia-hide>
+    <body class="bg-bg-100 font-sans overflow-x-hidden text-neutral_buffet-600 <?php echo implode(' ', get_body_class()); ?>" data-pg-ia='{"l":[{"trg":"load","a":"fadeIn"}]}' data-pg-ia-hide>
         <?php if( function_exists( 'wp_body_open' ) ) wp_body_open(); ?>

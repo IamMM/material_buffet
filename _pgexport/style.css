@@ -137,11 +137,12 @@ section:before {
 /* *  HIDE OVERFLOW * */
 body {
     overflow-x: hidden;
+    background-color: #F8F5ED !important;
 }
 
 /* * MOBILE MENU * */
 .menu__toggler {
-    position: absolute;
+    position: fixed;
     top: 30px;
     right: 20px;
     z-index: 999;
@@ -192,21 +193,22 @@ body {
 }
 
 /* * SLIDING MENU PANEL */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
     .menu {
-        left: -30%;
         z-index: 998;
         background-image: none;
-        background: rgba(250, 250, 250, 0.7);
+        background: #F8F5ED;
+        opacity: 0.9;
         clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
-        width: 250px;
-        left: -250px;
+        width: 80%;
+        height: 100vh;
+        left: -80%;
         padding: 50px;
+        margin: 0;
     }
 }
 

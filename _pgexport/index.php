@@ -26,10 +26,10 @@
                 </div>                 
             </nav>             
         </header>
-        <main id="main" class="mx-auto lg:text-center xl:w-8/12 2xl:w-7/12">
+        <main id="main" class="mx-auto xl:w-8/12 2xl:w-7/12">
             <?php $image_attributes = !empty( get_the_ID() ) ? wp_get_attachment_image_src( PG_Image::isPostImage() ? get_the_ID() : get_post_thumbnail_id( get_the_ID() ), 'large' ) : null; ?>
-            <div style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/buffet.jpg'); background-position: center center; background-size: cover; height:300px;<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>" class="flex flex-wrap-reverse relative">
-                <h1 class="md:absolute md:bottom-0 md:inset-x-0 md:mb-10 md:text-8xl text-6xl text-secondary_buffet-600"><?php the_title(); ?></h1>
+            <div style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/buffet.jpg'); background-position: center center; background-size: cover; height:300px;<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>" class="flex flex-wrap-reverse relative text-center">
+                <h1 class="md:absolute md:bottom-0 md:inset-x-0 md:mb-10 md:text-8xl text-6xl text-pale_buffet-100 text-secondary_buffet-600"><?php the_title(); ?></h1>
                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_White-01.png" class="block bottom-20 h-52 left-0 z-20 md:hidden md:relative" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;now&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}">
             </div>             
         </main>
@@ -46,7 +46,7 @@
             <div class="container mb-20 mx-auto relative xl:w-8/12 2xl:w-7/12"> 
 </div>             
         </section>
-        <footer class="bg-pastel_buffet-500 pt-12">
+        <footer class="bg-pastel_buffet-500 overflow-hidden pt-12">
             <div class="container mx-auto px-4 relative"> 
                 <div class="flex flex-wrap -mx-4"> 
                     <div class="p-4 w-full sm:w-1/2 lg:w-4/12"> 
@@ -70,20 +70,22 @@
                         <form method="post" action="https://materialbuffet.de/?na=s">
                             <input type="hidden" name="nlang" value="">
                             <div class="tnp-field tnp-field-email bg-white border-2 border-gray-400 border-pastel_buffet-500 flex items-center mb-6 overflow-hidden p-1"> 
-                                <input class="appearance-none border-none flex-1 focus:border-t-0 font-light outline-none p-2 w-full" placeholder="Mail" type="email" name="ne" id="tnp-1" value="" required> 
+                                <input class="appearance-none border-none flex-1 focus:border-t-0 font-light outline-none p-2 w-full" placeholder="Deine E-Mail" type="email" name="ne" id="tnp-1" value="" required> 
                                 <button type="submit" class="tnp-submit bg-pastel_buffet-500 font-medium inline-block px-6 py-2 text-center text-white uppercase" aria-label="submit" ype="submit" value="Submit">
                                     <svg viewBox="0 0 24 24" fill="currentColor" class="h-4 inline-block w-4"> 
                                         <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>                                         
                                     </svg>
                                 </button>                                 
                             </div>                             
-                        </form>                         
+                        </form>
+                        <div class="tnp tnp-subscription">
+</div>                         
                     </div>                     
                 </div>                 
                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element10.png" class="w-8/12" data-pg-ia-scene='{"s":"onEnter","d":"100%","l":[{"a":"fadeInRight"}],"o":"-200px"}'/>
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element10.png" class="ml-40 w-8/12" data-pg-ia-scene='{"s":"onEnter","d":"60%","l":[{"a":"fadeInRight"}],"o":"-200px"}'/>
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element10.png" class="ml-40 w-8/12" data-pg-ia-scene='{"s":"onEnter","o":"-200px","l":[{"a":"fadeInRight"}],"d":"75%"}'/>
                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element10.png" class="ml-80 w-8/12" data-pg-ia-scene='{"s":"onEnter","o":"-200px","l":[{"a":"fadeInRight"}],"d":"50%"}'/>
-                <div class="mt-24 py-4 text-sm md:mt-0"> 
+                <div class="py-4 text-sm"> 
                     <hr class="border-gray-400 mb-4"> 
                     <div class="flex flex-wrap -mx-4 items-center"> 
                         <div class="px-4 py-2 w-full md:flex-1"> 
