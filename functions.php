@@ -161,7 +161,7 @@ if ( ! function_exists( 'buffet_1_punkt_null_enqueue_scripts' ) ) :
     wp_enqueue_script( 'buffet_1_punkt_null-flowbitebundle', 'https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js', false, null, true);
 
     wp_deregister_script( 'buffet_1_punkt_null-clipboard' );
-    wp_enqueue_script( 'buffet_1_punkt_null-clipboard', get_template_directory_uri() . '/dist/clipboard.js', false, null, true);
+    wp_enqueue_script( 'buffet_1_punkt_null-clipboard', get_template_directory_uri() . '/js/clipboard.min.js', false, null, true);
 
     wp_deregister_script( 'buffet_1_punkt_null-script' );
     wp_enqueue_script( 'buffet_1_punkt_null-script', get_template_directory_uri() . '/script.js', false, null, true);
