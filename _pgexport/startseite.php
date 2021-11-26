@@ -6,13 +6,13 @@
 ?>
 <?php get_header(); ?>
 
-        <div id="toggler" class="menu__toggler lg:hidden" onclick="toggle()">
+        <div id="toggler" class="menu__toggler md:hidden" onclick="toggle()">
             <span></span>
         </div>
         <header class="bg-bg-100 bg-opacity-90 mx-auto sticky top-0 w-full z-30"> 
-            <nav class="lg:flex lg:flex-wrap lg:mx-auto lg:container lg:w-10/12 xl:w-8/12 2xl:w-7/12">
-                <img onclick="topFunction()" id="topBtn" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden lg:block lg:relative z-20" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}" data-pg-ia-hide="" data-pg-ia-scene='{"s":"onLeave","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"height":"220px"}},{"t":"tween","p":0,"d":1.01,"l":{"height":"93px"}}]}]}}],"d":"25%"}'> 
-                <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 z-50 lg:h-20 lg:items-center lg:relative lg:space-y-0 lg:text-right lg:w-auto" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element1.png');" data-name="nav-menu" data-pg-ia-scene='{"s":"onLeave","d":"25%","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"marginTop":40}},{"t":"tween","p":0,"d":0.99,"l":{"marginTop":15}}]}]}}],"on":"desktop"}'> 
+            <nav class="md:flex md:flex-wrap md:mx-auto md:container lg:w-10/12 xl:w-8/12 2xl:w-7/12">
+                <img onclick="topFunction()" id="topBtn" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden md:block md:relative z-20" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}" data-pg-ia-hide="" data-pg-ia-scene='{"s":"onLeave","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"height":"220px"}},{"t":"tween","p":0,"d":1.01,"l":{"height":"93px"}}]}]}}],"d":"25%"}'> 
+                <div id="menu" class="absolute flex md:h-20 md:items-center md:relative md:space-y-0 md:text-right md:w-auto menu ml-auto mt-10 pl-5 space-y-2 z-50" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element1.png');" data-name="nav-menu" data-pg-ia-scene='{"s":"onLeave","d":"25%","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"marginTop":40}},{"t":"tween","p":0,"d":0.99,"l":{"marginTop":15}}]}]}}],"on":"desktop"}'> 
                     <?php if ( has_nav_menu( 'primary' ) ) : ?>
                         <?php
                             PG_Smart_Walker_Nav_Menu::$options['template'] = '<a onclick="toggle()" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4 {CLASSES}" id="{ID}" {ATTRS}>{TITLE}</a>';
@@ -26,15 +26,15 @@
                 </div>
             </nav>             
         </header>
-        <main id="main" class="lg:container lg:mx-auto overflow-hidden relative lg:w-10/12 xl:w-8/12 2xl:w-7/12">
+        <main id="main" class="md:container md:mx-auto overflow-hidden relative lg:w-10/12 xl:w-8/12 2xl:w-7/12">
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element2.png" class="absolute bottom-28 overflow-hidden right-28" data-pg-ia-hide="" data-pg-ia-scene='{"l":[{"a":"rotateIn"}]}'>
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element3.png" class="absolute bottom-24 overflow-hidden right-0" data-pg-ia-hide="" data-pg-ia-scene='{"l":[{"a":"rotateIn"}]}'>
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element3.png" class="absolute bottom-0 overflow-hidden right-24" data-pg-ia-hide="" data-pg-ia-scene='{"l":[{"a":"rotateIn"}]}'>
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element3.png" class="absolute bottom-0 overflow-hidden right-0 w-10" data-pg-ia-hide="" data-pg-ia-scene='{"l":[{"a":"rotateIn"}]}'>
             <?php $image_attributes = !empty( get_the_ID() ) ? wp_get_attachment_image_src( PG_Image::isPostImage() ? get_the_ID() : get_post_thumbnail_id( get_the_ID() ), 'large' ) : null; ?>
-            <div style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/buffet.jpg'); background-position: center bottom; background-size: cover; height: 450px;<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>">
-                <div class="container flex h-full mx-auto p-4 relative">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_White-01.png" class="-ml-4 flex h-52 w-52 z-20 lg:hidden" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;now&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}">
+            <div class="title-image" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>">
+                <div class="container flex h-full items-center justify-center relative md:hidden">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_icon&word_White-01.png" class="w-11/12 z-20 md:hidden">
                 </div>
             </div>
             <section class="container mx-auto relative xl:text-center" id="konzept"> 
@@ -47,7 +47,7 @@
                             <p class="font-light leading-tight mb-6 text-left text-xl md:text-2xl"><?php _e( 'Durch die Verwertung von Reststoffen vermeiden wir Müll und fördern Materialkreisläufe. Unsere Vision: ein Zentrum für gebrauchte Materialien, kreative Wiederverwendung und Ressourcenschonung in Leipzig. Yummy.', 'buffet_1_punkt_null' ); ?></p> 
                         </div>                         
                         <div class="mx-auto">
-                            <a href="/konzept" class="bg-pastel_buffet-300 duration-500 ease-in-out font-medium hover:-translate-y-1 hover:scale-110 hover:shadow-xl inline-block px-20 py-2 rounded-full text-2xl text-center text-white transform transition uppercase"><?php _e( 'Erfahre mehr', 'buffet_1_punkt_null' ); ?></a>
+                            <a href="/rezept" class="bg-pastel_buffet-300 duration-500 ease-in-out font-medium hover:-translate-y-1 hover:scale-110 hover:shadow-xl inline-block px-20 py-2 rounded-full text-center text-white text-xl transform transition uppercase"><?php _e( 'Erfahre mehr', 'buffet_1_punkt_null' ); ?></a>
                         </div>                         
                     </div>                     
                 </div>                 
@@ -60,12 +60,13 @@
                     <div class="mx-auto w-full"> 
                         <h2 class="mb-1 uppercase"><?php _e( 'Speisekarte', 'buffet_1_punkt_null' ); ?></h2>
                         <h2 class="mb-4 text-3xl md:text-5xl"><?php _e( 'Rette mit uns Reststoffe und Baumaterialien vor dem Müll!', 'buffet_1_punkt_null' ); ?> </h2> 
-                        <p class="mb-4 text-xl md:text-2xl"><?php _e( 'Bei uns bekommst du lecker gebrauchtes Material, das wir von Kultureinrichtungen, Veranstaltungen und Unternehmen vor der Entsorgung retten. Was es alles zum Futtern gibt, können wir dir hier nicht zeigen, aber kleine Empfehlung des Hauses: einfach vorbeikommen!', 'buffet_1_punkt_null' ); ?><?php _e( 'Frisch aufgetischt und sau lecker.', 'buffet_1_punkt_null' ); ?></p> 
+                        <p class="mb-4 text-xl md:text-2xl"><?php _e( 'Bei uns bekommst du lecker gebrauchtes Material, das wir von Kultureinrichtungen, Veranstaltungen und Unternehmen vor der Entsorgung retten.', 'buffet_1_punkt_null' ); ?> <?php _e( 'Empfehlung des Hauses: einfach vorbeikommen! Hier wird frisch aufgetischt.', 'buffet_1_punkt_null' ); ?></p> 
                     </div>                     
                 </div>
                 <div class="flex flex-wrap mb-20 text-center">
                     <div class="w-6/12 md:w-4/12">
-                        <span class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/holz.jpeg'); background-size: cover; background-position: center center;"> <div class="hvrbox-layer_top rounded-full">
+                        <div class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/holz.jpeg'); background-size: cover; background-position: center center;"> 
+                            <div class="hvrbox-layer_top rounded-full">
                                 <div class="hvrbox-text">
                                     <ol>
                                         <li>
@@ -92,11 +93,13 @@
                                         <li>...</li>
                                     </ol>
                                 </div>
-                            </div></span>
+                            </div>
+                        </div>
                         <p class="font-bold mb-2 text-xl"><?php _e( 'Holz', 'buffet_1_punkt_null' ); ?></p> 
                     </div>
                     <div class="w-6/12 md:w-4/12">
-                        <span class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/metall.jpeg'); background-size: cover; background-position: center center;"> <div class="hvrbox-layer_top rounded-full">
+                        <div class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/metall.jpeg'); background-size: cover; background-position: center center;"> 
+                            <div class="hvrbox-layer_top rounded-full">
                                 <div class="hvrbox-text">
                                     <ol>
                                         <li>
@@ -120,11 +123,13 @@
                                         <li>...</li>
                                     </ol>
                                 </div>
-                            </div></span>
+                            </div>
+                        </div>
                         <p class="font-bold mb-2 text-xl"><?php _e( 'Metall', 'buffet_1_punkt_null' ); ?></p> 
                     </div>
                     <div class="w-6/12 md:w-4/12">
-                        <span class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/farbe.jpeg'); background-size: cover; background-position: center center;"> <div class="hvrbox-layer_top rounded-full">
+                        <div class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/farbe.jpeg'); background-size: cover; background-position: center center;"> 
+                            <div class="hvrbox-layer_top rounded-full">
                                 <div class="hvrbox-text">
                                     <ol>
                                         <li>
@@ -145,11 +150,13 @@
                                         <li>...</li>
                                     </ol>
                                 </div>
-                            </div></span>
+                            </div>
+                        </div>
                         <p class="font-bold mb-2 text-xl"><?php _e( 'Farbe', 'buffet_1_punkt_null' ); ?></p> 
                     </div>
                     <div class="w-6/12 md:w-4/12">
-                        <span class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/elektro.jpeg'); background-size: cover; background-position: center center;"> <div class="hvrbox-layer_top rounded-full">
+                        <div class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/elektro.jpeg'); background-size: cover; background-position: center center;"> 
+                            <div class="hvrbox-layer_top rounded-full">
                                 <div class="hvrbox-text">
                                     <ol>
                                         <li>
@@ -173,11 +180,13 @@
                                         <li>...</li>
                                     </ol>
                                 </div>
-                            </div></span>
+                            </div>
+                        </div>
                         <p class="font-bold mb-2 text-xl"><?php _e( 'Kabel & Lampen', 'buffet_1_punkt_null' ); ?></p> 
                     </div>
                     <div class="w-6/12 md:w-4/12">
-                        <span class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/stoffe.jpeg'); background-size: cover; background-position: center center;"> <div class="hvrbox-layer_top rounded-full">
+                        <div class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/stoffe.jpeg'); background-size: cover; background-position: center center;"> 
+                            <div class="hvrbox-layer_top rounded-full">
                                 <div class="hvrbox-text">
                                     <ol>
                                         <li>
@@ -204,11 +213,13 @@
                                         <li>...</li>
                                     </ol>
                                 </div>
-                            </div></span>
+                            </div>
+                        </div>
                         <p class="font-bold mb-2 text-xl"><?php _e( 'Stoffe', 'buffet_1_punkt_null' ); ?></p> 
                     </div>
                     <div class="w-6/12 md:w-4/12">
-                        <span class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/nudeln.jpeg'); background-size: cover; background-position: center center;"> <div class="hvrbox-layer_top rounded-full">
+                        <div class="hvrbox duration-500 ease-in-out h-40 hover:scale-110 inline-block my-4 p-12 rounded-full w-40 md:h-60 md:w-60" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/nudeln.jpeg'); background-size: cover; background-position: center center;"> 
+                            <div class="hvrbox-layer_top rounded-full">
                                 <div class="hvrbox-text">
                                     <ol>
                                         <li>
@@ -232,14 +243,15 @@
                                         <li>...</li>
                                     </ol>
                                 </div>
-                            </div></span>
+                            </div>
+                        </div>
                         <p class="font-bold mb-2 text-xl"><?php _e( 'und andere Leckereien', 'buffet_1_punkt_null' ); ?></p> 
                     </div>
                 </div>                 
             </div>
             <div class="h-36 md:h-60 xl:mx-auto xl:w-11/12" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element8.png'); background-repeat: repeat-x; background-size: cover; background-position: center center;" data-pg-ia-scene='{"l":[{"a":"fadeIn"}]}'></div>             
         </section>
-        <section class="2xl:w-7/12 flex flex-wrap-reverse items-center md:flex-wrap lg:w-10/12 mb-10 md:container mx-auto relative xl:w-9/12" id="lageplan"> 
+        <section class="flex flex-wrap-reverse items-center mb-10 mx-auto p-4 relative md:container md:flex-wrap lg:w-10/12 xl:w-9/12 2xl:w-7/12" id="lageplan"> 
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/anfahrt.png" class="mx-auto w-8/12 md:mx-0 md:relative md:w-6/12 xl:left-20">
             <div class="w-full md:absolute md:bottom-0 md:right-0 md:w-7/12 xl:w-5/12"> 
                 <div class="bg-white m-5 md:m-0 shadow-xl z-10 p-10">
@@ -265,7 +277,7 @@
         <section class="mx-auto overflow-x-hidden py-20 md:container lg:w-10/12 xl:w-8/12 2xl:w-7/12" id="spenden"> 
             <div class="container mx-auto px-4 relative text-left" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/shapes/Form_15_blue#1.png');"> 
                 <h2 class="font-medium mb-1 uppercase"><?php _e( 'Unterstütze Uns', 'buffet_1_punkt_null' ); ?></h2>
-                <h2 class="font-bold mb-4 relative text-3xl w-full md:text-5xl md:w-max"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element9.png" class="-right-32 -top-10 absolute"/><?php _e( 'Dont´t waste it - taste it!', 'buffet_1_punkt_null' ); ?></h2> 
+                <h2 class="font-bold mb-4 relative text-3xl w-full md:text-5xl md:w-max"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element9.png" class="-right-32 -top-10 absolute"><?php _e( 'Don´t waste it - taste it!', 'buffet_1_punkt_null' ); ?></h2> 
                 <p class="font-light mb-6 text-xl md:text-2xl"><?php _e( 'Unterstütze unseren gemeinnützigen Verein und fördere so ressourcenschonende Materialkreisläufe. Für ein zukunftsweisendes Leipzig.', 'buffet_1_punkt_null' ); ?></p> 
                 <div class="fitems-center grid grif-col-1 justify-center mb-10 md:grid-cols-2 text-center"> 
                     <a href="/material-spenden"><div class="p-4"> 

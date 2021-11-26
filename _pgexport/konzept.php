@@ -10,9 +10,9 @@
             <span></span>
         </div>
         <header class="bg-bg-100 bg-opacity-90 mx-auto sticky top-0 w-full z-30"> 
-            <nav class="lg:flex lg:flex-wrap lg:mx-auto lg:container lg:w-10/12 xl:w-8/12 2xl:w-7/12">
-                <a href="/"><img id="topBtn" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden lg:block lg:relative z-20" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}" data-pg-ia-hide="" data-pg-ia-scene='{"s":"onLeave","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"height":"220px"}},{"t":"tween","p":0,"d":1.01,"l":{"height":"93px"}}]}]}}],"d":"25%"}'></a> 
-                <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 z-50 lg:h-20 lg:items-center lg:relative lg:space-y-0 lg:text-right lg:w-auto" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element1.png');" data-name="nav-menu" data-pg-ia-scene='{"s":"onLeave","d":"25%","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"marginTop":40}},{"t":"tween","p":0,"d":0.99,"l":{"marginTop":15}}]}]}}],"on":"desktop"}'> 
+            <nav class="md:flex md:flex-wrap md:mx-auto md:container lg:w-10/12 xl:w-8/12 2xl:w-7/12">
+                <a href="/"><img id="topBtn" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden md:block md:relative z-20" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}" data-pg-ia-hide="" data-pg-ia-scene='{"s":"onLeave","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"height":"220px"}},{"t":"tween","p":0,"d":1.01,"l":{"height":"93px"}}]}]}}],"d":"25%"}'></a> 
+                <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 z-50 md:h-20 md:items-center md:relative md:space-y-0 md:text-right md:w-auto" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element1.png');" data-name="nav-menu" data-pg-ia-scene='{"s":"onLeave","d":"25%","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"marginTop":40}},{"t":"tween","p":0,"d":0.99,"l":{"marginTop":15}}]}]}}],"on":"desktop"}'> 
                     <?php if ( has_nav_menu( 'primary' ) ) : ?>
                         <?php
                             PG_Smart_Walker_Nav_Menu::$options['template'] = '<a onclick="toggle()" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4 {CLASSES}" id="{ID}" {ATTRS}>{TITLE}</a>';
@@ -60,14 +60,22 @@
                 </div>
                 <div class="flex flex-wrap items-start mb-4 px-4"> 
                     <div class="mx-auto w-full"> 
-                        <h1 class="mb-4 text-3xl md:text-5xl pb-5"><?php _e( 'Wie viel CO2 können wir durch Wiederverwendung sparen', 'buffet_1_punkt_null' ); ?></h1> 
+                        <h1 class="mb-4 text-3xl md:text-5xl pb-5"><?php _e( 'Wie viel CO2 können wir durch Wiederverwendung sparen...', 'buffet_1_punkt_null' ); ?></h1> 
                     </div>
-                    <div class="md:w-2/3 mb-10 mx-auto"> 
-                        <p class="mb-5 text-xl md:text-2xl"><?php _e( 'wenn Materialien nicht entsorgt und für Andere nicht neu produziert werden müssen? Das haben wir uns auch gefragt und dir mal folgende Beispiele berechnet. Wissenschaft können wir nämlich auch.', 'buffet_1_punkt_null' ); ?></p> 
+                    <div class="mb-10 mx-auto"> 
+                        <p class="mb-5 text-xl md:text-2xl"><?php _e( '...wenn Materialien nicht entsorgt und für Andere nicht neu produziert werden müssen? Das haben wir uns auch gefragt und dir mal folgende Beispiele berechnet. Wissenschaft können wir nämlich auch.', 'buffet_1_punkt_null' ); ?></p> 
                         <p class="mb-5 text-xl md:text-2xl"><?php _e( 'Zum Vergleich: Pro Jahr bindet eine Buche ca. 12,5 Kilogramm CO2. Du müsstest also 80 Bäume pflanzen, um 1 Tonne CO2 durch Bäume wieder zu kompensieren.', 'buffet_1_punkt_null' ); ?></p>
-                        <p class="mb-5 text-xl md:text-2xl"><?php _e( '*Kilogramm CO2-Äquivalent = Masseinheit zur Vereinheitlichung der Klimawirkung der unterschiedlichen Treibhausgase.', 'buffet_1_punkt_null' ); ?></p> 
-                    </div>
-                    <img class="md:w-1/3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/Posterkomplett.png"/> 
+                        <p class="mb-5 text-xl md:text-2xl"><?php _e( 'Eine Tonne der folgenden Materialien enstsprechen:', 'buffet_1_punkt_null' ); ?></p>
+                        <div class="gap-4 grid grid-cols-1 mx-auto pb-8 w-10/12 md:grid-cols-2 md:w-full">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/co2/1_kvh.png"/>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/co2/2_molton.png"/>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/co2/3_stahl.png"/>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/co2/4_wandfarbe.png"/>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/co2/5_styropor.png"/>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/co2/6_messeteppich.png"/>
+                        </div>
+                        <p class="mb-5 text-xl md:text-2xl"><?php _e( '*kgCO2e = Kilogramm CO2-Äquivalent: Masseinheit zur Vereinheitlichung der Klimawirkung der unterschiedlichen Treibhausgase.', 'buffet_1_punkt_null' ); ?></p> 
+                    </div>                     
                 </div>
                 <div class="mx-auto text-center text-xl w-full">
                     <a href="/material-spenden" class="bg-pastel_buffet-300 duration-500 ease-in-out font-medium hover:-translate-y-1 hover:scale-110 hover:shadow-xl inline-block px-20 py-2 rounded-full text-center text-white text-xl transform transition uppercase"><?php _e( 'Jetzt Material spenden und CO2 sparen', 'buffet_1_punkt_null' ); ?></a>

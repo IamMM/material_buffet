@@ -188,9 +188,6 @@ if ( ! function_exists( 'buffet_1_punkt_null_enqueue_scripts' ) ) :
     wp_deregister_style( 'buffet_1_punkt_null-style' );
     wp_enqueue_style( 'buffet_1_punkt_null-style', get_bloginfo('stylesheet_url'), false, null, 'all');
 
-    wp_deregister_style( 'buffet_1_punkt_null-flowbite' );
-    wp_enqueue_style( 'buffet_1_punkt_null-flowbite', 'https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.min.css', false, null, 'all');
-
     /* Pinegrow generated Enqueue Styles End */
 
     }

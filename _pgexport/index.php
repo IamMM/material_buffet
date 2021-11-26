@@ -6,13 +6,13 @@
 ?>
 <?php get_header(); ?>
 
-        <div id="toggler" class="menu__toggler fixed flex lg:hidden" onclick="toggle()">
+        <div id="toggler" class="menu__toggler fixed flex md:hidden" onclick="toggle()">
             <span></span>
         </div>
         <header class="bg-bg-100 bg-opacity-90 mx-auto sticky top-0 w-full z-30"> 
-            <nav class="lg:flex lg:flex-wrap lg:mx-auto lg:container lg:w-10/12 xl:w-8/12 2xl:w-7/12">
-                <a href="/"><img id="topBtn" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden lg:block lg:relative z-20" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}" data-pg-ia-hide="" data-pg-ia-scene='{"s":"onLeave","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"height":"220px"}},{"t":"tween","p":0,"d":1.01,"l":{"height":"93px"}}]}]}}],"d":"25%"}'></a> 
-                <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 z-50 lg:h-20 lg:items-center lg:relative lg:space-y-0 lg:text-right lg:w-auto" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element1.png');" data-name="nav-menu" data-pg-ia-scene='{"s":"onLeave","d":"25%","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"marginTop":40}},{"t":"tween","p":0,"d":0.99,"l":{"marginTop":15}}]}]}}],"on":"desktop"}'> 
+            <nav class="md:flex md:flex-wrap md:mx-auto md:container lg:w-10/12 xl:w-8/12 2xl:w-7/12">
+                <a href="/"><img id="topBtn" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden md:block md:relative z-20" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}" data-pg-ia-hide="" data-pg-ia-scene='{"s":"onLeave","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"height":"220px"}},{"t":"tween","p":0,"d":1.01,"l":{"height":"93px"}}]}]}}],"d":"25%"}'></a> 
+                <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 z-50 md:h-20 md:items-center md:relative md:space-y-0 md:text-right md:w-auto" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/textures/Element1.png');" data-name="nav-menu" data-pg-ia-scene='{"s":"onLeave","d":"25%","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"marginTop":40}},{"t":"tween","p":0,"d":0.99,"l":{"marginTop":15}}]}]}}],"on":"desktop"}'> 
                     <?php if ( has_nav_menu( 'primary' ) ) : ?>
                         <?php
                             PG_Smart_Walker_Nav_Menu::$options['template'] = '<a onclick="toggle()" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4 {CLASSES}" id="{ID}" {ATTRS}>{TITLE}</a>';
@@ -30,8 +30,8 @@
             <?php $image_attributes = !empty( get_the_ID() ) ? wp_get_attachment_image_src( PG_Image::isPostImage() ? get_the_ID() : get_post_thumbnail_id( get_the_ID() ), 'large' ) : null; ?>
             <div style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/bilder/buffet.jpg'); background-position: center center; background-size: cover;<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>">
                 <div class="container mx-auto flex flex-col-reverse p-4 relative text-center md:h-80">
-                    <h1 class="break text-6xl text-left text-white lg:absolute lg:bottom-0 lg:inset-x-0 lg:mb-10 lg:text-8xl lg:text-center"><?php the_title(); ?></h1>
-                    <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_White-01.png" class="block bottom-20 h-52 left-0 z-20 lg:hidden" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;now&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}"></a>
+                    <h1 class="break text-6xl text-left text-white md:absolute md:bottom-0 md:inset-x-0 md:mb-10 md:text-8xl md:text-center"><?php the_title(); ?></h1>
+                    <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/logo/MB_Icon_White-01.png" class="block bottom-20 h-52 left-0 z-20 md:hidden" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;now&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}"></a>
                 </div>
             </div>             
         </main>
