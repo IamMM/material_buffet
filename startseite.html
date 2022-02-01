@@ -13,13 +13,13 @@
         <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
-    <body class="bg-bg-100 font-sans overflow-x-hidden text-neutral_buffet-600" data-pg-ia='{"l":[{"trg":"load","a":"fadeIn"}]}' data-pg-ia-hide>
+    <body class="bg-bg-100 font-sans overflow-x-hidden text-neutral_buffet-600" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;fadeIn&quot;}]}" data-pg-ia-hide>
         <div id="toggler" class="menu__toggler md:hidden" onclick="toggle()">
             <span></span>
         </div>
         <header class="bg-bg-100 bg-opacity-90 mx-auto sticky top-0 w-full z-30">
             <nav class="md:flex md:flex-wrap md:mx-auto md:container lg:w-10/12 xl:w-8/12 2xl:w-7/12">
-                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden md:block md:relative z-20" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}" data-pg-ia-hide="" data-pg-ia-scene='{"s":"onLeave","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"height":"220px"}},{"t":"tween","p":0,"d":1.01,"l":{"height":"93px"}}]}]}}],"d":"25%"}'>
+                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden md:block md:relative z-20" data-pg-ia='{"l":[{"trg":"load","a":"rollIn","dly":"500ms","d":"2s"},{"trg":"mouseenter","a":"swing"}]}' data-pg-ia-hide="" data-pg-ia-scene='{"s":"onLeave","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"height":"220px"}},{"t":"tween","p":0,"d":1.01,"l":{"height":"93px"}}]}]}}],"d":"25%"}'>
                 <div id="menu" class="absolute flex md:h-20 md:items-center md:relative md:space-y-0 md:text-right md:w-auto menu ml-auto mt-10 pl-5 space-y-2 z-50" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('assets/textures/Element1.png');" data-name="nav-menu" data-pg-ia-scene='{"s":"onLeave","d":"25%","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"marginTop":40}},{"t":"tween","p":0,"d":0.99,"l":{"marginTop":15}}]}]}}],"on":"desktop"}'>
                     <div cms-menu="primary">
                         <a onclick="toggle()" href="/" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4">Das Rezept</a>
@@ -178,9 +178,9 @@ Empfehlung des Hauses: einfach vorbeikommen! Hier wird frisch aufgetischt.</p>
                     </div>
                 </div>
             </div>
-            <div class="h-36 md:h-60 xl:mx-auto xl:w-11/12" style="background-image: url('assets/textures/Element8.png'); background-repeat: repeat-x; background-size: cover; background-position: center center;" data-pg-ia-scene='{"l":[{"a":"fadeIn"}]}'></div>
+            <div class="h-36 md:h-52 xl:mx-auto xl:w-11/12 2xl:w-9/12" style="background-image: url('assets/textures/Element8.png'); background-repeat: no-repeat; background-size: contain; background-position: center center;" data-pg-ia-scene='{"l":[{"a":"fadeIn"}]}'></div>
         </section>
-        <section class="flex flex-wrap-reverse items-center justify-center mb-10 mx-auto p-4 relative md:flex-wrap lg:w-10/12 xl:w-9/12" id="lageplan">
+        <section class="flex flex-wrap-reverse items-center justify-center mb-10 mx-auto p-4 relative md:flex-wrap lg:w-10/12 xl:w-9/12 2xl:w-7/12" id="lageplan">
             <img src="assets/bilder/anfahrt.png" class="w-10/12 pr-6 md:w-6/12">
             <div class="w-full md:w-5/12 xl:w-5/12">
                 <div class="bg-white m-5 md:m-0 shadow-xl z-10 p-10">
@@ -222,16 +222,16 @@ Empfehlung des Hauses: einfach vorbeikommen! Hier wird frisch aufgetischt.</p>
                 <h2 class="font-bold mb-4 relative text-3xl w-full md:text-5xl md:w-max" wp-acf-get-field="support_h1"><img src="assets/textures/Element9.png" class="-right-32 -top-10 absolute">Don´t waste it - taste it!</h2>
                 <p class="font-light mb-6 text-xl md:text-2xl" wp-acf-get-field="support_text">Unterstütze unseren gemeinnützigen Verein und fördere so ressourcenschonende Materialkreisläufe. Für ein zukunftsweisendes Leipzig.</p>
                 <div class="fitems-center grid grif-col-1 justify-center mb-10 md:grid-cols-2 text-center">
-                    <a href="/material-spenden" wp-acf-get-field="spendebutton1_link" wp-acf-get-field-set="href"><div class="p-4">
-                            <div class="bg-pastel_buffet-300 duration-500 ease-in-out h-80 hover:-translate-y-1 hover:scale-110 hover:shadow-xl px-10 py-12 rounded-3xl shadow-lg transform transition">
-                                <h3 class="font-bold mb-4 text-2xl uppercase" wp-acf-get-field="spendebutton1_h1">Material <br>Spenden</h3>
-                                <p class="pb-10" wp-acf-get-field="spendebutton1_text">Du bist ein Kulturbetrieb, Unternehmen oder eine Veranstaltung und hast Materialien übrig, die zu schade für die Tonne sind? Wir nehmen deine Reststoffe!</p>
-                            </div>
-                        </div> </a>
                     <div class="p-4">
-                        <a href="/moneten-spenden" wp-acf-get-field="spendebutton2_link" wp-acf-get-field-set="href"><div class="bg-pastel_buffet-300 duration-500 ease-in-out h-80 hover:-translate-y-1 hover:scale-110 hover:shadow-xl px-10 py-12 rounded-3xl shadow-lg transform transition">
+                        <a href="/material-spenden" wp-acf-get-field="spendebutton1_link" wp-acf-get-field-set="href"><div class="bg-pastel_buffet-300 duration-500 ease-in-out h-full hover:-translate-y-1 hover:scale-110 hover:shadow-xl px-10 py-12 rounded-3xl shadow-lg transform transition">
+                                <h3 class="font-bold mb-4 text-2xl uppercase" wp-acf-get-field="spendebutton1_h1">Material <br>Spenden</h3>
+                                <p wp-acf-get-field="spendebutton1_text">Du bist ein Kulturbetrieb, Unternehmen oder eine Veranstaltung und hast Materialien übrig, die zu schade für die Tonne sind? Wir nehmen deine Reststoffe!</p>
+                            </div> </a>
+                    </div>
+                    <div class="p-4">
+                        <a href="/moneten-spenden" wp-acf-get-field="spendebutton2_link" wp-acf-get-field-set="href"><div class="bg-pastel_buffet-300 duration-500 ease-in-out h-full hover:-translate-y-1 hover:scale-110 hover:shadow-xl px-10 py-12 rounded-3xl shadow-lg transform transition">
                                 <h3 class="font-bold mb-4 text-2xl uppercase" wp-acf-get-field="spendebutton2_h1">Moneten <br>Spenden</h3>
-                                <p class="pb-10" wp-acf-get-field="spendebutton2_text">Mit deiner Spende unterstützt du unsere Arbeit. Ob einmal oder dauerhaft - jeder Euro hilft uns dabei Material zu retten und weiter zu geben!</p>
+                                <p wp-acf-get-field="spendebutton2_text">Mit deiner Spende unterstützt du unsere Arbeit. Ob einmal oder dauerhaft - jeder Euro hilft uns dabei Material zu retten und weiter zu geben!</p>
                             </div></a>
                     </div>
                 </div>
