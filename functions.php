@@ -163,6 +163,12 @@ if ( ! function_exists( 'buffet_1_punkt_null_enqueue_scripts' ) ) :
     wp_deregister_script( 'buffet_1_punkt_null-clipboard' );
     wp_enqueue_script( 'buffet_1_punkt_null-clipboard', get_template_directory_uri() . '/js/clipboard.min.js', false, null, true);
 
+    wp_deregister_script( 'buffet_1_punkt_null-swiperbundle' );
+    wp_enqueue_script( 'buffet_1_punkt_null-swiperbundle', 'https://unpkg.com/swiper/swiper-bundle.min.js', false, null, true);
+
+    wp_deregister_script( 'buffet_1_punkt_null-swiper' );
+    wp_enqueue_script( 'buffet_1_punkt_null-swiper', get_template_directory_uri() . '/js/swiper.js', false, null, true);
+
     wp_deregister_script( 'buffet_1_punkt_null-script' );
     wp_enqueue_script( 'buffet_1_punkt_null-script', get_template_directory_uri() . '/script.js', false, null, true);
 
@@ -179,11 +185,8 @@ if ( ! function_exists( 'buffet_1_punkt_null_enqueue_scripts' ) ) :
     wp_deregister_style( 'buffet_1_punkt_null-tailwind-1' );
     wp_enqueue_style( 'buffet_1_punkt_null-tailwind-1', get_template_directory_uri() . '/tailwind_theme/tailwind.css', false, null, 'all');
 
-    wp_deregister_style( 'buffet_1_punkt_null-controls' );
-    wp_enqueue_style( 'buffet_1_punkt_null-controls', get_template_directory_uri() . '/pgia/components/controls.css', false, null, 'all');
-
-    wp_deregister_style( 'buffet_1_punkt_null-slider' );
-    wp_enqueue_style( 'buffet_1_punkt_null-slider', get_template_directory_uri() . '/pgia/components/slider.css', false, null, 'all');
+    wp_deregister_style( 'buffet_1_punkt_null-swiperbundle' );
+    wp_enqueue_style( 'buffet_1_punkt_null-swiperbundle', 'https://unpkg.com/swiper/swiper-bundle.min.css', false, null, 'all');
 
     wp_deregister_style( 'buffet_1_punkt_null-style' );
     wp_enqueue_style( 'buffet_1_punkt_null-style', get_bloginfo('stylesheet_url'), false, null, 'all');
@@ -204,4 +207,30 @@ require_once "inc/wp_pg_helpers.php";
 require_once "inc/wp_smart_navwalker.php";
 
     /* Pinegrow generated Include Resources End */
+
+/* Creating Editor Blocks with ACF PRO */
+
+function buffet_1_punkt_null_acf_blocks_init() {
+
+    // Check if ACF PRO function exists.
+    if( function_exists('acf_register_block_type') ) :
+
+        // Register blocks. Don't edit anything between the following comments.
+        /* Pinegrow generated Register Blocks Begin */
+
+        acf_register_block_type( array(
+            'name' => 'konzept_block',
+            'title' => __( 'Konzept', 'buffet_1_punkt_null' ),
+            'category' => 'common',
+            'keywords' => array( 'konzept' ),
+            'render_template' => 'blocks/konzept_block.php'
+        ) );
+
+    /* Pinegrow generated Register Blocks End */
+    endif;
+}
+add_action('acf/init', 'buffet_1_punkt_null_acf_blocks_init');
+
+/* End of creating Editor Blocks with ACF PRO */
+
 ?>

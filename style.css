@@ -224,8 +224,8 @@ body {
     }
 }
 
-/* * Logo Greyfilter * */
-#logos>div {
+/* * Logo Section * */
+.logos>div>img {
     filter: grayscale(1);
 }
 
@@ -234,7 +234,15 @@ body {
     filter: grayscale(0);
     transition: ease-in-out;
 }
+
 * */
+
+.swiper-wrapper {
+  -webkit-transition-timing-function:linear!important;
+  -o-transition-timing-function:linear!important;
+  transition-timing-function:linear!important;
+}
+
 /* *  WORD BREAK * */
 .break {
     -webkit-hyphens: auto;

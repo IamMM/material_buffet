@@ -6,12 +6,11 @@
         <title>Material Buffet</title>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.min.css"/>
-        <link href="/assets/fontawesome/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
         <meta name="description" content="dein gemeinnütziger Second-Hand-Baumarkt in Leipzig">
         <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="pgia/components/controls.css">
-        <link rel="stylesheet" href="pgia/components/slider.css">
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body class="bg-bg-100 font-sans overflow-x-hidden text-neutral_buffet-600" data-pg-ia='{"l":[{"trg":"load","a":"fadeIn"}]}' data-pg-ia-hide>
@@ -221,35 +220,37 @@ Empfehlung des Hauses: einfach vorbeikommen! Hier wird frisch aufgetischt.</p>
                 </div>                 
             </div>             
         </section>
-        <section class="py-20 relative md:text-center 2xl:mx-auto 2xl:w-9/12" id="partnerInnen"> 
+        <section class="py-20 relative md:text-center 2xl:mx-auto 2xl:w-9/12" id="partnerInnen">
             <img class="absolute left-0 top-10" data-pg-ia-scene='{"l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0,"transformOrigin":"left bottom","rotationZ":-30},"e":"Power1.easeOut"},{"t":"tween","p":0,"d":1,"l":{"autoAlpha":1,"transformOrigin":"left bottom","rotationZ":0},"e":"Power1.easeOut"}]}]}}]}' src="assets/textures/Element11.png">
-            <div class="container mx-auto px-4 relative"> 
-                <h2 class="font-bold leading-tight mb-4 text-3xl md:text-5xl">Auf den Geschmack gekommen</h2> 
+            <div class="relative">
+                <h2 class="font-bold leading-tight mb-4 text-3xl md:text-5xl">Auf den Geschmack gekommen</h2>
                 <p class="text-xl md:text-2xl">Diese Unternehmen und Kulturbetriebe arbeiten bereits mit uns zusammen.</p>
-                <div class="flex flex-wrap items-center justify-around mt-20 md:space-x-10 md:justify-around md:text-center" id="logos"> 
-                    <div class="p-2 w-1/2 md:w-1/4 lg:w-1/5"> 
-                        <img src="assets/logo_partner/mdbk.png"> 
+                <div class="mt-10 mySwiper swiper">
+                    <div class="swiper-wrapper logos">
+                        <div class="swiper-slide">
+                            <img src="assets/logo_partner/mdbk.png" class="h-16 mx-auto"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/logo_partner/mediacityleipzig.png" class="h-16 mx-auto"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/logo_partner/grassi.png" class="h-16 mx-auto"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/logo_partner/posterlounge.png" class="h-16 mx-auto"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/logo_partner/dok.svg" class="h-16 mx-auto"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/logo_partner/gfzk.png" class="h-16 mx-auto"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/logo_partner/trashgalore.png" class="h-16 mx-auto"/>
+                        </div>
                     </div>
-                    <div class="p-2 w-1/2 md:w-1/4 lg:w-1/5"> 
-                        <img src="assets/logo_partner/mediacityleipzig.png"> 
-                    </div>
-                    <div class="p-2 w-1/2 md:w-1/4 lg:w-1/5"> 
-                        <img src="assets/logo_partner/grassi.png"> 
-                    </div>
-                    <div class="p-2 w-1/2 md:w-1/4 lg:w-1/5"> 
-                        <img src="assets/logo_partner/posterlounge.png"> 
-                    </div>
-                    <div class="p-2 w-1/2 md:w-1/4 lg:w-1/5"> 
-                        <img src="assets/logo_partner/dok.svg"> 
-                    </div>
-                    <div class="p-2 w-1/2 md:w-1/4 lg:w-1/5"> 
-                        <img src="assets/logo_partner/gfzk.png"> 
-                    </div>
-                    <div class="p-2 w-1/2 md:w-1/4 lg:w-1/5"> 
-                        <img src="assets/logo_partner/trashgalore.png"> 
-                    </div>                     
                 </div>
-            </div>             
+            </div>
         </section>
         <footer class="bg-pastel_buffet-500 overflow-hidden pt-12">
             <div class="container mx-auto px-4 relative">
@@ -305,8 +306,12 @@ Empfehlung des Hauses: einfach vorbeikommen! Hier wird frisch aufgetischt.</p>
             </div>
         </footer>
         <script src="pgia/lib/pgia.js"></script>
-        <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+        <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>         
+        <!--Tooltips-->
         <script src="js/clipboard.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>         
+        <!--Logo Carousel-->
+        <script src="js/swiper.js"></script>
     </body>
 </html>

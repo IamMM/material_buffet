@@ -16,8 +16,7 @@
         <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
         <meta name="description" content="dein gemeinnütziger Second-Hand-Baumarkt in Leipzig">
         <link rel="stylesheet" href="tailwind_theme/tailwind.css">
-        <link rel="stylesheet" href="pgia/components/controls.css">
-        <link rel="stylesheet" href="pgia/components/slider.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body class="bg-pale_buffet-100 font-sans overflow-x-hidden relative text-neutral_buffet-600" data-pg-ia='{"l":[{"trg":"load","a":"fadeIn"}]}' data-pg-ia-hide>
@@ -121,7 +120,7 @@
                     <hr class="border-gray-400 mb-4"> 
                     <div class="flex flex-wrap -mx-4 items-center"> 
                         <div class="px-4 py-2 w-full md:flex-1"> 
-                            <p>&copy; 2021. All Rights Reserved - Material Buffet e.V.</p> 
+                            <p>&copy; Material Buffet e.V.</p> 
                         </div>                         
                         <div class="px-4 py-2 w-full sm:w-auto"> 
                             <a href="/datenschutz" class="hover:text-mpink-500">Datenschutz</a> |                      
@@ -134,6 +133,10 @@
         <script src="pgia/lib/pgia.js"></script>
         <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
         <script src="js/clipboard.min.js"></script>
+        <!--Tooltips-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>         
+        <!--Logo Carousel-->         
+        <script src="js/swiper.js"></script>         
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
