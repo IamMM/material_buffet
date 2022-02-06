@@ -236,11 +236,10 @@ body {
 }
 
 * */
-
 .swiper-wrapper {
-  -webkit-transition-timing-function:linear!important;
-  -o-transition-timing-function:linear!important;
-  transition-timing-function:linear!important;
+    -webkit-transition-timing-function: linear!important;
+    -o-transition-timing-function: linear!important;
+    transition-timing-function: linear!important;
 }
 
 /* *  WORD BREAK * */
@@ -359,4 +358,17 @@ body {
 
 .content a {
     color: #f3bab5;
+}
+
+.stripes-divider {
+    background-image: url('assets/textures/Element8.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+@media (max-width:767px) {
+    .stripes-divider {
+        background-size: cover;
+    }
 }
