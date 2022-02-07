@@ -671,6 +671,15 @@ img,
 .left-5{
       left: 1.25rem;
 }
+.-left-1\/4{
+      left: -25%;
+}
+.-left-10{
+      left: -2.5rem;
+}
+.-left-5{
+      left: -1.25rem;
+}
 .z-30{
       z-index: 30;
 }
@@ -689,6 +698,9 @@ img,
 .m-5{
       margin: 1.25rem;
 }
+.m-4{
+      margin: 1rem;
+}
 .mx-auto{
       margin-left: auto;
       margin-right: auto;
@@ -704,6 +716,14 @@ img,
 .-mx-4{
       margin-left: -1rem;
       margin-right: -1rem;
+}
+.my-auto{
+      margin-top: auto;
+      margin-bottom: auto;
+}
+.mx-4{
+      margin-left: 1rem;
+      margin-right: 1rem;
 }
 .ml-auto{
       margin-left: auto;
@@ -750,6 +770,18 @@ img,
 .mt-24{
       margin-top: 6rem;
 }
+.mb-40{
+      margin-bottom: 10rem;
+}
+.mb-36{
+      margin-bottom: 9rem;
+}
+.mb-32{
+      margin-bottom: 8rem;
+}
+.mb-28{
+      margin-bottom: 7rem;
+}
 .block{
       display: block;
 }
@@ -789,6 +821,9 @@ img,
 .h-5{
       height: 1.25rem;
 }
+.h-20{
+      height: 5rem;
+}
 .w-full{
       width: 100%;
 }
@@ -821,6 +856,17 @@ img,
 }
 .w-5{
       width: 1.25rem;
+}
+.w-min{
+      width: -webkit-min-content;
+      width: -moz-min-content;
+      width: min-content;
+}
+.w-auto{
+      width: auto;
+}
+.w-1\/2{
+      width: 50%;
 }
 .flex-1{
       flex: 1 1 0%;
@@ -1009,6 +1055,9 @@ img,
 }
 .pb-8{
       padding-bottom: 2rem;
+}
+.pl-10{
+      padding-left: 2.5rem;
 }
 .text-left{
       text-align: left;

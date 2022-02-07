@@ -21,12 +21,10 @@ function toggle() {
 	menu.classList.toggle("active");
 };
 
-// SWIPER LOGO Carousel
-var swiper = new Swiper('.mySwiper', {
+// LOGO SWIPER
+var swiper1 = new Swiper('.logoSwiper', {
   slidesPerView: 2,
   spaceBetween: 10,
-  grabCursor: true,
-  freeMode: true,
   loop: true,
   speed: 6000,
   autoplay: {
@@ -36,19 +34,34 @@ var swiper = new Swiper('.mySwiper', {
   breakpoints: {
     480: {
       slidesPerView: 3,
-      spaceBetween: 20
     },
     640: {
       slidesPerView: 4,
-      spaceBetween: 30
-    },
-    768: {
-      slidesPerView: 5,
-      spaceBetween: 40
     },
     1024: {
+      slidesPerView: 5,
+    },
+    1536: {
       slidesPerView: 6,
-      spaceBetween: 50
-    }
+    },
+  },
+});
+
+// MATERIAL SWIPER
+var swiper2 = new Swiper('.materialSwiper', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 3000,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+    },
+    1536: {
+      slidesPerView: 4,
+    },
   },
 });

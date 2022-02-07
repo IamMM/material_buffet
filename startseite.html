@@ -237,15 +237,15 @@ Empfehlung des Hauses: einfach vorbeikommen! Hier wird frisch aufgetischt.</p>
                 </div>
             </div>
         </section>
-        <section class="py-20 relative md:text-center 2xl:mx-auto 2xl:w-9/12" id="partnerInnen">
+        <section class="py-20 relative md:text-center 2xl:mx-auto" id="partnerInnen">
             <img class="absolute left-0 top-10" data-pg-ia-scene='{"l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0,"transformOrigin":"left bottom","rotationZ":-30},"e":"Power1.easeOut"},{"t":"tween","p":0,"d":1,"l":{"autoAlpha":1,"transformOrigin":"left bottom","rotationZ":0},"e":"Power1.easeOut"}]}]}}]}' src="assets/textures/Element11.png">
             <div class="relative">
                 <div class="container px-4  mx-auto">
                     <h2 class="font-bold leading-tight mb-4 text-3xl md:text-5xl" wp-acf-get-field="cooperations_h1">Auf den Geschmack gekommen</h2>
                     <p class="text-xl md:text-2xl" wp-acf-get-field="cooperations_text">Diese Unternehmen und Kulturbetriebe arbeiten bereits mit uns zusammen.</p>
                 </div>
-                <div class="my-10 mySwiper swiper ">
-                    <div class="swiper-wrapper logos" wp-call-function="logo_loop()" wp-call-function-set="content">
+                <div class="h-20 logoSwiper my-10 swiper">
+                    <div class="swiper-wrapper logos" wp-call-function="gallery_loop('logo_gallery')" wp-call-function-set="content">
                         <div class="swiper-slide">
                             <img src="assets/logo_partner/mdbk.png" class="h-16 mx-auto"/>
                         </div>

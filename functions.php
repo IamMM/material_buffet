@@ -166,9 +166,6 @@ if ( ! function_exists( 'buffet_1_punkt_null_enqueue_scripts' ) ) :
     wp_deregister_script( 'buffet_1_punkt_null-swiperbundle' );
     wp_enqueue_script( 'buffet_1_punkt_null-swiperbundle', 'https://unpkg.com/swiper/swiper-bundle.min.js', false, null, true);
 
-    wp_deregister_script( 'buffet_1_punkt_null-swiper' );
-    wp_enqueue_script( 'buffet_1_punkt_null-swiper', get_template_directory_uri() . '/js/swiper.js', false, null, true);
-
     wp_deregister_script( 'buffet_1_punkt_null-script' );
     wp_enqueue_script( 'buffet_1_punkt_null-script', get_template_directory_uri() . '/script.js', false, null, true);
 
