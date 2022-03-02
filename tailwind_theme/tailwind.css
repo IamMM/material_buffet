@@ -868,8 +868,20 @@ img,
 .w-1\/2{
       width: 50%;
 }
+.w-screen{
+      width: 100vw;
+}
 .flex-1{
       flex: 1 1 0%;
+}
+.flex-auto{
+      flex: 1 1 auto;
+}
+.flex-initial{
+      flex: 0 1 auto;
+}
+.flex-none{
+      flex: none;
 }
 .transform{
       transform: var(--tw-transform);
@@ -1038,6 +1050,10 @@ img,
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
 }
+.px-2{
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+}
 .pl-5{
       padding-left: 1.25rem;
 }
@@ -1058,6 +1074,9 @@ img,
 }
 .pl-10{
       padding-left: 2.5rem;
+}
+.pl-2{
+      padding-left: 0.5rem;
 }
 .text-left{
       text-align: left;

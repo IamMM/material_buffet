@@ -11,6 +11,8 @@
         <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
         <meta name="description" content="dein gemeinnütziger Second-Hand-Baumarkt in Leipzig">
         <link href="tailwind_theme/tailwind.css" rel="stylesheet" type="text/css">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet'/>
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body class="bg-bg-100 font-sans overflow-x-hidden text-neutral_buffet-600" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;fadeIn&quot;}]}" data-pg-ia-hide>
@@ -180,41 +182,16 @@ Empfehlung des Hauses: einfach vorbeikommen! Hier wird frisch aufgetischt.</p>
             </div>
             <div class="h-36 stripes-divider md:h-52 xl:mx-auto xl:w-11/12 2xl:w-9/12" data-pg-ia-scene='{"l":[{"a":"fadeIn"}]}'></div>
         </section>
-        <section class="flex flex-wrap-reverse items-center justify-center mb-10 mx-auto p-4 relative md:flex-wrap lg:w-10/12 xl:w-9/12 2xl:w-7/12" id="lageplan">
-            <img src="assets/bilder/anfahrt.png" class="w-10/12 pr-6 md:w-6/12">
-            <div class="w-full md:w-5/12 xl:w-5/12">
-                <div class="bg-white m-5 md:m-0 shadow-xl z-10 p-10">
-                    <h2 class="font-medium mb-1 uppercase">Lageplan &amp; Öffnungszeiten</h2>
-                    <h2 class="font-bold leading-tight mb-6 text-2xl uppercase">So findest du uns</h2>
-                    <p class="mb-2">Jeden zweiten &amp; vierten Freitag im Monat von 12 - 18 Uhr</p>
-                    <p class="mb-2">Ehemalige Kantine in der Diezmannstraße 20, Haus 3, 04207 Leipzig</p>
-                    <p>ÖPNV: Tram Linie 1, 3 - Haltestelle Diezmannstraße</p>
-                    <p class="mb-2 md:hidden">Koordinaten: <a href="geo:51.3159863,12.3160746" target="_blank" class="text-bold_buffet-300">51.3159863,12.3160746</a></p>
-                    <div class="mb-2 hidden md:block">Koordinaten:
-                        <button data-tooltip-target="tooltip-click" data-tooltip-trigger="click" type="button" class="coordinates text-bold_buffet-300  " data-clipboard-text="51.3159863,12.3160746">51.3159863,12.3160746</button>
-                        <div id="tooltip-click" role="tooltip" class="tooltip absolute z-10 inline-block bg-gray-900 font-medium shadow-sm text-white py-2 px-3 text-sm rounded-lg opacity-0 invisible">
-                            Kopiert! Einfügen in Karte deiner Wahl.
-                            <div class="tooltip-arrow" data-popper-arrow></div>
-                        </div>
-                    </div>
-                    <div class="mt-8">
-                        <h3 class="font-medium mb-1 uppercase">Und außerdem</h3>
-                        <h2 class="font-bold leading-tight mb-6 text-2xl uppercase">Unser Kühlschrank</h2>
-                        <p class="mb-2">Jeden 2. Freitag im Monat von 12 - 14 Uhr</p>
-                        <p class="mb-2">Vorratskammer in Leipzig-Wahren Pittlerwerke Stammerstraße Ecke Flößenstraße</p>
-                        <p class="mb-2 md:hidden">Koordinaten: <a href="geo:51.378082, 12.316057" target="_blank" class="text-bold_buffet-300">51.378082, 12.316057</a></p>
-                        <div class="mb-2 hidden md:block">Koordinaten:
-                            <button data-tooltip-target="tooltip-click" data-tooltip-trigger="click" type="button" class="coordinates text-bold_buffet-300  " data-clipboard-text="51.378082, 12.316057">51.378082, 12.316057</button>
-                            <div id="tooltip-click" role="tooltip" class="tooltip absolute z-10 inline-block bg-gray-900 font-medium shadow-sm text-white py-2 px-3 text-sm rounded-lg opacity-0 invisible">
-                                Kopiert! Einfügen in Karte deiner Wahl.
-                                <div class="tooltip-arrow" data-popper-arrow></div>
-                            </div>
-                        </div>
-                    </div>
+        <section class="mb-10" id="lageplan">
+            <div class="mx-auto p-4 lg:w-10/12 xl:w-9/12 2xl:w-7/12">
+                <h2 class="mb-1 uppercase">Lageplan &amp; Öffnungszeiten</h2>
+                <h2 class="mb-4 text-3xl md:text-5xl" wp-acf-get-field="lageplan_h1">So findest du uns</h2>
+                <div class="flex">
+                    <p class="mb-4 px-2 text-xl w-1/2 md:text-2xl" wp-acf-get-field="lageplan_text">In unserem <b id="markt">Markt</b> ist das Buffet reichlich gedeckt. Schau und lass es dir schmecken.</p>
+                    <p class="mb-4 px-2 text-xl w-1/2 md:text-2xl" wp-acf-get-field="lageplan_text">Du bist auf der Suche nach größeren Mengen und Formaten an Baumaterialien? Dann besuche uns in unerem <b id="lager">Großlager</b>.</p>
                 </div>
             </div>
-            <div class="w-full">
-</div>
+            <div id='map' class="2xl:mx-auto 2xl:container"></div>
         </section>
         <section class="mx-auto overflow-x-hidden py-20 md:container lg:w-10/12 xl:w-8/12 2xl:w-7/12" id="spenden">
             <div class="container mx-auto px-4 relative text-left" style="background-image: url('assets/shapes/Form_15_blue#1.png');">
@@ -325,9 +302,9 @@ Empfehlung des Hauses: einfach vorbeikommen! Hier wird frisch aufgetischt.</p>
             </div>
         </footer>
         <script src="pgia/lib/pgia.js"></script>
-        <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>         
+        <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
         <script src="js/clipboard.min.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>         
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
