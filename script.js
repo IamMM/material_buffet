@@ -1,7 +1,21 @@
-// When the user clicks on the button, scroll to the top of the document
+// FIT TEXT
+$(".banner").fitText();
+
+// SCROLL BEHAVIOUR
+// go to top smooth
 function topFunction() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+// shrink header when scroll
+$(document).on("scroll", function(){
+  if ($(document).scrollTop() > 30){
+    $("header").addClass("shrink");
+  } else {
+    $("header").removeClass("shrink");
+  }
+});
+
 
 // COPY TO CLIPBOARD
 var clipboard = new ClipboardJS('.coordinates');
@@ -63,7 +77,7 @@ var swiper2 = new Swiper('.materialSwiper', {
   },
 });
 
-// mapbox
+// MAPBOX
 mapboxgl.accessToken = 'pk.eyJ1IjoiaWFtbW0iLCJhIjoiY2wwM3lscmd0MGdyNjNpbWp0YjBjbGE1OCJ9.h6EMCPIzYj4tCMEqgjQRsQ';
 const map = new mapboxgl.Map({
   container: 'map',
@@ -75,7 +89,7 @@ const map = new mapboxgl.Map({
 
 map.scrollZoom.disable();
 map.addControl(new mapboxgl.NavigationControl());
-map.addControl(new mapboxgl.FullscreenControl());
+//map.addControl(new mapboxgl.FullscreenControl());
 
 map.on('click', (event) => {
   // If the user clicked on one of your markers, get its information.

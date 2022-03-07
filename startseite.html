@@ -15,14 +15,14 @@
         <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet'/>
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
-    <body class="bg-bg-100 font-sans overflow-x-hidden text-neutral_buffet-600" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;fadeIn&quot;}]}" data-pg-ia-hide>
+    <body class="bg-bg-100 font-sans overflow-x-hidden text-neutral_buffet-600" data-pg-ia-hide data-pg-ia='{"l":[{"trg":"load","a":"fadeIn"}]}'>
         <div id="toggler" class="menu__toggler md:hidden" onclick="toggle()">
             <span></span>
         </div>
-        <header class="bg-bg-100 bg-opacity-90 mx-auto sticky top-0 w-full z-30">
+        <header class="bg-bg-100 bg-opacity-90 fixed mx-auto top-0 w-full z-30">
             <nav class="md:flex md:flex-wrap md:mx-auto md:container lg:w-10/12 xl:w-8/12 2xl:w-7/12">
-                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden md:block md:relative z-20" data-pg-ia='{"l":[{"trg":"load","a":"rollIn","dly":"500ms","d":"2s"},{"trg":"mouseenter","a":"swing"}]}' data-pg-ia-hide="" data-pg-ia-scene='{"s":"onLeave","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"height":"220px"}},{"t":"tween","p":0,"d":1.01,"l":{"height":"93px"}}]}]}}],"d":"25%"}'>
-                <div id="menu" class="absolute flex md:h-20 md:items-center md:relative md:space-y-0 md:text-right md:w-auto menu ml-auto mt-10 pl-5 space-y-2 z-50" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('assets/textures/Element1.png');" data-name="nav-menu" data-pg-ia-scene='{"s":"onLeave","d":"25%","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"marginTop":40}},{"t":"tween","p":0,"d":0.99,"l":{"marginTop":15}}]}]}}],"on":"desktop"}'>
+                <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden md:block md:relative z-20" data-pg-ia='{"l":[{"trg":"mouseenter","a":"swing"}]}'>
+                <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 z-50 md:h-20 md:items-center md:relative md:space-y-0 md:text-right md:w-auto" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('assets/textures/Element1.png');" data-name="nav-menu">
                     <div cms-menu="primary">
                         <a onclick="toggle()" href="/" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4">Das Rezept</a>
                         <a onclick="toggle()" href="/#lageplan" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4">Lageplan</a>
@@ -31,27 +31,29 @@
                 </div>
             </nav>
         </header>
+        <div cms-post-image class="max-w-screen-xl mx-auto title-image">
+            <a href="/#lageplan"><div class="banner duration-500 ease-in-out hidden hover:scale-125 rotate-12 md:block">Jeden zweiten & vierten Freitag geöffnet! 12-18h</div></a>
+            <div class="container flex h-full items-center justify-center relative md:hidden">
+                <img src="assets/logo/MB_icon&word_White-01.png" class="w-11/12 z-20 md:hidden">
+            </div>
+        </div>
         <main id="main" class="md:container md:mx-auto overflow-hidden relative lg:w-10/12 xl:w-8/12 2xl:w-7/12">
             <img src="assets/textures/Element2.png" class="absolute bottom-28 overflow-hidden right-28" data-pg-ia-hide="" data-pg-ia-scene='{"l":[{"a":"rotateIn"}]}'>
             <img src="assets/textures/Element3.png" class="absolute bottom-24 overflow-hidden right-0" data-pg-ia-hide="" data-pg-ia-scene='{"l":[{"a":"rotateIn"}]}'>
             <img src="assets/textures/Element3.png" class="absolute bottom-0 overflow-hidden right-24" data-pg-ia-hide="" data-pg-ia-scene='{"l":[{"a":"rotateIn"}]}'>
             <img src="assets/textures/Element3.png" class="absolute bottom-0 overflow-hidden right-0 w-10" data-pg-ia-hide="" data-pg-ia-scene='{"l":[{"a":"rotateIn"}]}'>
-            <div cms-post-image class="title-image">
-                <div class="container flex h-full items-center justify-center relative md:hidden">
-                    <img src="assets/logo/MB_icon&word_White-01.png" class="w-11/12 z-20 md:hidden">
-                </div>
-            </div>
+            <a href="/#lageplan"><div class="banner rotate-12 z-10 md:hidden">Jeden zweiten & vierten Freitag geöffnet! 12-18h</div></a>
             <section class="container mx-auto relative xl:text-center" id="konzept">
                 <div class="mx-auto p-4 md:text-center md:w-full">
                     <div class="flex flex-wrap mb-16 mx-auto">
                         <div class="mb-5 w-full xl:mt-10" id="hero-text">
-                            <h1 class="font-extrabold mb-4 md:text-5xl text-3xl text-left" wp-acf-get-field="titel">Mahlzeit! </h1>
-                            <h1 class="font-extrabold mb-4 md:text-5xl text-3xl text-left" wp-acf-get-field="untertitel">Wir sind das Materialbuffet -&nbsp;dein gemeinnütziger Second-Hand-Baumarkt in Leipzig</h1>
+                            <h1 class="font-extrabold mb-4 text-3xl text-left md:text-5xl" wp-acf-get-field="titel">Mahlzeit! </h1>
+                            <h1 class="mb-4 md:text-4xl text-3xl text-left" wp-acf-get-field="untertitel">Wir sind das Materialbuffet -&nbsp;dein gemeinnütziger Second-Hand-Baumarkt in Leipzig</h1>
                             <h1 class="font-extrabold mb-4 text-2xl md:text-4xl"></h1>
                             <p class="font-light leading-tight mb-6 text-left text-xl md:text-2xl" wp-acf-get-field="titeltext">Durch die Verwertung von Reststoffen vermeiden wir Müll und fördern Materialkreisläufe. Unsere Vision: ein Zentrum für gebrauchte Materialien, kreative Wiederverwendung und Ressourcenschonung in Leipzig. Yummy.</p>
                         </div>
                         <div class="mx-auto">
-                            <a href="/rezept" class="bg-pastel_buffet-300 duration-500 ease-in-out font-medium hover:-translate-y-1 hover:scale-110 hover:shadow-xl inline-block px-20 py-2 rounded-full text-center text-white text-xl transform transition uppercase" wp-acf-get-field="titelbutton_text" wp-acf-get-field-2="titelbutton_link" wp-acf-get-field-2-set="href">Erfahre mehr</a>
+                            <a href="/rezept" class="bg-pastel_buffet-300 duration-500 ease-in-out font-medium hover:-translate-y-1 hover:scale-110 hover:shadow-xl inline-block px-20 py-2 rounded-full text-center text-white text-xl transform transition uppercase md:text-lg" wp-acf-get-field="titelbutton_text" wp-acf-get-field-2="titelbutton_link" wp-acf-get-field-2-set="href">Erfahre mehr</a>
                         </div>
                     </div>
                 </div>
@@ -191,7 +193,7 @@ Empfehlung des Hauses: einfach vorbeikommen! Hier wird frisch aufgetischt.</p>
                     <p class="mb-4 px-2 text-xl w-1/2 md:text-2xl" wp-acf-get-field="lageplan_text">Du bist auf der Suche nach größeren Mengen und Formaten an Baumaterialien? Dann besuche uns in unerem <b id="lager">Großlager</b>.</p>
                 </div>
             </div>
-            <div id='map' class="2xl:mx-auto 2xl:container"></div>
+            <div id='map' class="mx-auto"></div>
         </section>
         <section class="mx-auto overflow-x-hidden py-20 md:container lg:w-10/12 xl:w-8/12 2xl:w-7/12" id="spenden">
             <div class="container mx-auto px-4 relative text-left" style="background-image: url('assets/shapes/Form_15_blue#1.png');">
@@ -303,8 +305,10 @@ Empfehlung des Hauses: einfach vorbeikommen! Hier wird frisch aufgetischt.</p>
         </footer>
         <script src="pgia/lib/pgia.js"></script>
         <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
-        <script src="js/clipboard.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/clipboard.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>

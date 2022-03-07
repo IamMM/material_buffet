@@ -17,10 +17,8 @@
         <meta name="description" content="dein gemeinnütziger Second-Hand-Baumarkt in Leipzig">
         <link rel="stylesheet" href="tailwind_theme/tailwind.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
         <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet'/>
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body class="bg-pale_buffet-100 font-sans overflow-x-hidden relative text-neutral_buffet-600" data-pg-ia='{"l":[{"trg":"load","a":"fadeIn"}]}' data-pg-ia-hide>
@@ -29,8 +27,8 @@
         </div>
         <header class="bg-bg-100 bg-opacity-90 mx-auto sticky top-0 w-full z-30">
             <nav class="md:flex md:flex-wrap md:mx-auto md:container lg:w-10/12 xl:w-8/12 2xl:w-7/12">
-                <a href="/"><img id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden md:block md:relative z-20" data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;load&quot;,&quot;a&quot;:&quot;rollIn&quot;},{&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:&quot;swing&quot;}]}" data-pg-ia-hide="" data-pg-ia-scene='{"s":"onLeave","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"height":"220px"}},{"t":"tween","p":0,"d":1.01,"l":{"height":"93px"}}]}]}}],"d":"25%"}'></a>
-                <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 z-50 md:h-20 md:items-center md:relative md:space-y-0 md:text-right md:w-auto" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('assets/textures/Element1.png');" data-name="nav-menu" data-pg-ia-scene='{"s":"onLeave","d":"25%","l":[{"a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"marginTop":40}},{"t":"tween","p":0,"d":0.99,"l":{"marginTop":15}}]}]}}],"on":"desktop"}'>
+                <a href="/"><img id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden md:block md:relative z-20" data-pg-ia='{"l":[{"trg":"mouseenter","a":"swing"}]}'></a>
+                <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 z-50 md:h-20 md:items-center md:relative md:space-y-0 md:text-right md:w-auto" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('assets/textures/Element1.png');" data-name="nav-menu">
                     <div cms-menu="primary">
                         <a onclick="toggle()" href="/" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4">Startseite</a>
                         <a onclick="toggle()" href="/konzept" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4">Das Konzept</a>
@@ -135,6 +133,7 @@
             </div>
         </footer>
         <script src="pgia/lib/pgia.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
         <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
         <script src="js/clipboard.min.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
