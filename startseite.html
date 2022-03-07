@@ -20,19 +20,20 @@
             <span></span>
         </div>
         <header class="bg-bg-100 bg-opacity-90 fixed mx-auto top-0 w-full z-30">
-            <nav class="md:flex md:flex-wrap md:mx-auto md:container lg:w-10/12 xl:w-8/12 2xl:w-7/12">
+            <nav class="relative md:container md:flex md:flex-wrap md:mx-auto lg:w-10/12 xl:w-8/12 2xl:w-7/12">
                 <img onclick="topFunction()" id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden md:block md:relative z-20" data-pg-ia='{"l":[{"trg":"mouseenter","a":"swing"}]}'>
                 <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 z-50 md:h-20 md:items-center md:relative md:space-y-0 md:text-right md:w-auto" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('assets/textures/Element1.png');" data-name="nav-menu">
+                    <div class="-rotate-12 banner z-30 md:hidden" wp-acf-get-field="banner_text">Jeden zweiten & vierten Freitag geöffnet! 12-18h</div>
                     <div cms-menu="primary">
-                        <a onclick="toggle()" href="/" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4">Das Rezept</a>
-                        <a onclick="toggle()" href="/#lageplan" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4">Lageplan</a>
-                        <a onclick="toggle()" href="/konzept" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4">Unterstützen</a>
+                        <a onclick="toggle()" href="/" class="font-light hover:text-pastel_buffet-500 px-0 py-2 transition-colors uppercase md:px-4">Das Rezept</a>
+                        <a onclick="toggle()" href="/#lageplan" class="font-light hover:text-pastel_buffet-500 px-0 py-2 transition-colors uppercase md:px-4">Lageplan</a>
+                        <a onclick="toggle()" href="/konzept" class="font-light hover:text-pastel_buffet-500 px-0 py-2 transition-colors uppercase md:px-4">Unterstützen</a>
                     </div>
                 </div>
             </nav>
         </header>
         <div cms-post-image class="max-w-screen-xl mx-auto title-image">
-            <a href="/#lageplan"><div class="banner duration-500 ease-in-out hidden hover:scale-125 rotate-12 md:block">Jeden zweiten & vierten Freitag geöffnet! 12-18h</div></a>
+            <a href="#lageplan" wp-acf-get-field="banner_link" wp-acf-get-field-set="href"><div class="banner duration-500 ease-in-out hidden hover:scale-125 rotate-12 text-bg-100 md:block" wp-acf-get-field="banner_text">Jeden zweiten & vierten Freitag geöffnet! 12-18h</div></a>
             <div class="container flex h-full items-center justify-center relative md:hidden">
                 <img src="assets/logo/MB_icon&word_White-01.png" class="w-11/12 z-20 md:hidden">
             </div>
@@ -42,7 +43,6 @@
             <img src="assets/textures/Element3.png" class="absolute bottom-24 overflow-hidden right-0" data-pg-ia-hide="" data-pg-ia-scene='{"l":[{"a":"rotateIn"}]}'>
             <img src="assets/textures/Element3.png" class="absolute bottom-0 overflow-hidden right-24" data-pg-ia-hide="" data-pg-ia-scene='{"l":[{"a":"rotateIn"}]}'>
             <img src="assets/textures/Element3.png" class="absolute bottom-0 overflow-hidden right-0 w-10" data-pg-ia-hide="" data-pg-ia-scene='{"l":[{"a":"rotateIn"}]}'>
-            <a href="/#lageplan"><div class="banner rotate-12 z-10 md:hidden">Jeden zweiten & vierten Freitag geöffnet! 12-18h</div></a>
             <section class="container mx-auto relative xl:text-center" id="konzept">
                 <div class="mx-auto p-4 md:text-center md:w-full">
                     <div class="flex flex-wrap mb-16 mx-auto">
@@ -187,10 +187,10 @@ Empfehlung des Hauses: einfach vorbeikommen! Hier wird frisch aufgetischt.</p>
         <section class="mb-10" id="lageplan">
             <div class="mx-auto p-4 lg:w-10/12 xl:w-9/12 2xl:w-7/12">
                 <h2 class="mb-1 uppercase">Lageplan &amp; Öffnungszeiten</h2>
-                <h2 class="mb-4 text-3xl md:text-5xl" wp-acf-get-field="lageplan_h1">So findest du uns</h2>
-                <div class="flex">
-                    <p class="mb-4 px-2 text-xl w-1/2 md:text-2xl" wp-acf-get-field="lageplan_text">In unserem <b id="markt">Markt</b> ist das Buffet reichlich gedeckt. Schau und lass es dir schmecken.</p>
-                    <p class="mb-4 px-2 text-xl w-1/2 md:text-2xl" wp-acf-get-field="lageplan_text">Du bist auf der Suche nach größeren Mengen und Formaten an Baumaterialien? Dann besuche uns in unerem <b id="lager">Großlager</b>.</p>
+                <h2 class="mb-4 text-3xl md:text-5xl" wp-acf-get-field="lage_h1">So findest du uns</h2>
+                <div class="grid grid-cols-2 gap-4 text-xl md:text-2xl mb-4" wp-acf-get-field="lage_text">
+                    <p>In unserem <b id="markt">Markt</b> ist das Buffet reichlich gedeckt. Schau vorbei und lass es dir schmecken.</p>
+                    <p>Du bist auf der Suche nach größeren Mengen und Formaten an Baumaterialien? Dann besuche uns in unserem <b id="lager">Großlager</b>.</p>
                 </div>
             </div>
             <div id='map' class="mx-auto"></div>

@@ -668,6 +668,48 @@ img,
 .-left-5{
       left: -1.25rem;
 }
+.top-28{
+      top: 7rem;
+}
+.left-14{
+      left: 3.5rem;
+}
+.top-40{
+      top: 10rem;
+}
+.right-20{
+      right: 5rem;
+}
+.right-52{
+      right: 13rem;
+}
+.left-60{
+      left: 15rem;
+}
+.top-60{
+      top: 15rem;
+}
+.top-56{
+      top: 14rem;
+}
+.top-36{
+      top: 9rem;
+}
+.left-52{
+      left: 13rem;
+}
+.left-44{
+      left: 11rem;
+}
+.left-24{
+      left: 6rem;
+}
+.left-6{
+      left: 1.5rem;
+}
+.left-1{
+      left: 0.25rem;
+}
 .z-30{
       z-index: 30;
 }
@@ -823,6 +865,10 @@ img,
       --tw-rotate: 12deg;
       transform: var(--tw-transform);
 }
+.-rotate-12{
+      --tw-rotate: -12deg;
+      transform: var(--tw-transform);
+}
 .transform{
       transform: var(--tw-transform);
 }
@@ -833,6 +879,9 @@ img,
       -webkit-appearance: none;
          -moz-appearance: none;
               appearance: none;
+}
+.grid-cols-2{
+      grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-col-reverse{
       flex-direction: column-reverse;
@@ -845,6 +894,9 @@ img,
 }
 .justify-center{
       justify-content: center;
+}
+.gap-4{
+      gap: 1rem;
 }
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
       --tw-space-y-reverse: 0;
@@ -1047,6 +1099,30 @@ img,
       --tw-text-opacity: 1;
       color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
+.text-black{
+      --tw-text-opacity: 1;
+      color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+.text-pastel_buffet-100{
+      --tw-text-opacity: 1;
+      color: rgba(246, 242, 230, var(--tw-text-opacity));
+}
+.text-bold_buffet-300{
+      --tw-text-opacity: 1;
+      color: rgba(239, 148, 173, var(--tw-text-opacity));
+}
+.text-color_buffet-100{
+      --tw-text-opacity: 1;
+      color: rgba(221, 78, 69, var(--tw-text-opacity));
+}
+.text-pale_buffet-500{
+      --tw-text-opacity: 1;
+      color: rgba(240, 239, 246, var(--tw-text-opacity));
+}
+.text-bg-100{
+      --tw-text-opacity: 1;
+      color: rgba(248, 245, 237, var(--tw-text-opacity));
+}
 .shadow-lg{
       --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
       box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1128,6 +1204,10 @@ body, html {min-height: 100vh;}
 .hover\:text-bold_buffet-300:hover{
       --tw-text-opacity: 1;
       color: rgba(239, 148, 173, var(--tw-text-opacity));
+}                    
+.hover\:text-pastel_buffet-500:hover{
+      --tw-text-opacity: 1;
+      color: rgba(119, 188, 180, var(--tw-text-opacity));
 }                    
 .hover\:shadow-xl:hover{
       --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
