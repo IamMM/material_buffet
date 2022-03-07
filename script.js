@@ -116,6 +116,14 @@ map.on('click', (event) => {
 var x_offset = 0.002;
 var y_offset = 0.0018;
 
+document.getElementById('menu-item-280').addEventListener('click', () => {
+  map.flyTo({
+    center: [12.3747329, 51.3406321],
+    zoom: 10.5,
+    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+  });
+});
+
 document.getElementById('markt').addEventListener('click', () => {
   map.flyTo({
     center: [12.316132 + x_offset, 51.315969 + y_offset],
