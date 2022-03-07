@@ -84,7 +84,7 @@ const map = new mapboxgl.Map({
   zoom: 10.5,
   center: [12.3747329,51.3406321], // x,y coordinates
   style: 'mapbox://styles/iammm/cl06qg049000415p304moodap',
-  //cooperativeGestures: true // ctrl + scroll = zoom
+  cooperativeGestures: true // ctrl + scroll = zoom
 });
 
 map.scrollZoom.disable();
