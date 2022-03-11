@@ -18,7 +18,7 @@ $(document).on("scroll", function(){
 
 
 // COPY TO CLIPBOARD
-var clipboard = new ClipboardJS('.coordinates');
+//var clipboard = new ClipboardJS('.coordinates');
 
 // MOBILE MENU
 /*

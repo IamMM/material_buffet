@@ -160,17 +160,11 @@ if ( ! function_exists( 'buffet_1_punkt_null_enqueue_scripts' ) ) :
     wp_deregister_script( 'buffet_1_punkt_null-pgia' );
     wp_enqueue_script( 'buffet_1_punkt_null-pgia', get_template_directory_uri() . '/pgia/lib/pgia.js', false, null, true);
 
-    wp_deregister_script( 'buffet_1_punkt_null-flowbitebundle' );
-    wp_enqueue_script( 'buffet_1_punkt_null-flowbitebundle', 'https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js', false, null, true);
-
     wp_deregister_script( 'jquery' );
     wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js', false, null, true);
 
     wp_deregister_script( 'buffet_1_punkt_null-swiperbundle' );
     wp_enqueue_script( 'buffet_1_punkt_null-swiperbundle', 'https://unpkg.com/swiper/swiper-bundle.min.js', false, null, true);
-
-    wp_deregister_script( 'buffet_1_punkt_null-clipboard' );
-    wp_enqueue_script( 'buffet_1_punkt_null-clipboard', get_template_directory_uri() . '/js/clipboard.min.js', false, null, true);
 
     wp_deregister_script( 'buffet_1_punkt_null-jqueryfittext' );
     wp_enqueue_script( 'buffet_1_punkt_null-jqueryfittext', get_template_directory_uri() . '/js/jquery.fittext.js', false, null, true);
