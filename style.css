@@ -115,8 +115,12 @@ a.button:hover {
     --tw-translate-y: -0.25rem;
 }
 
-#topBtn {
-    height: 22vh;
+.logo {
+    height: 220px;
+}
+
+.cover-logo {
+  height: 22vh;
 }
 
 #menu {
@@ -171,6 +175,10 @@ html {
     .title-image {
         height: 75vh;
         margin-top: 22vh;
+    }
+
+    .nav-margin {
+      margin-top: 220px;
     }
 
     section {

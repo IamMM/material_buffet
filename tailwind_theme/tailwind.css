@@ -1040,6 +1040,12 @@ img,
 .pb-5{
       padding-bottom: 1.25rem;
 }
+.pt-10{
+      padding-top: 2.5rem;
+}
+.pt-5{
+      padding-top: 1.25rem;
+}
 .text-left{
       text-align: left;
 }
@@ -1469,6 +1475,10 @@ body, html {min-height: 100vh;}
 }                    
 @media (min-width: 1280px){
 
+      .xl\:m-auto{
+            margin: auto;
+      }
+
       .xl\:mx-auto{
             margin-left: auto;
             margin-right: auto;
@@ -1476,6 +1486,10 @@ body, html {min-height: 100vh;}
 
       .xl\:mt-10{
             margin-top: 2.5rem;
+      }
+
+      .xl\:ml-auto{
+            margin-left: auto;
       }
 
       .xl\:w-8\/12{
@@ -1495,6 +1509,10 @@ body, html {min-height: 100vh;}
       }
 
       .xl\:w-10\/12{
+            width: 83.333333%;
+      }
+
+      .xl\:w-5\/6{
             width: 83.333333%;
       }
 

@@ -25,19 +25,19 @@
         <div id="toggler" class="menu__toggler fixed flex md:hidden" onclick="toggle()">
             <span></span>
         </div>
-        <header class="bg-bg-100 bg-opacity-90 mx-auto sticky top-0 w-full z-30">
-            <nav class="md:flex md:flex-wrap md:mx-auto md:container lg:w-10/12 xl:w-8/12 2xl:w-7/12">
-                <a href="/"><img id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="cursor-pointer hidden md:block md:relative z-20" data-pg-ia='{"l":[{"trg":"mouseenter","a":"swing"}]}'></a>
+        <header class="bg-bg-100 bg-opacity-90 fixed mx-auto top-0 w-full z-30">
+            <nav class="relative md:container md:flex md:flex-wrap md:mx-auto lg:w-10/12 xl:w-8/12 2xl:w-7/12">
+                <a href="/"><img id="topBtn" src="assets/logo/MB_Icon_Black-01.png" class="logo cursor-pointer hidden md:block md:relative z-20" data-pg-ia='{"l":[{"trg":"mouseenter","a":"swing"}]}'></a>
                 <div id="menu" class="absolute flex menu ml-auto mt-10 pl-5 space-y-2 z-50 md:h-20 md:items-center md:relative md:space-y-0 md:text-right md:w-auto" style="background-repeat: no-repeat; background-position: left top; background-size: contain; background-image: url('assets/textures/Element1.png');" data-name="nav-menu">
                     <div cms-menu="primary">
-                        <a onclick="toggle()" href="/" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4">Startseite</a>
-                        <a onclick="toggle()" href="/konzept" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4">Das Konzept</a>
-                        <a onclick="toggle()" href="/#support" class="font-light hover:text-color_buffet-600 px-0 py-2 transition-colors uppercase md:px-4">Spenden</a>
+                        <a onclick="toggle()" href="/" class="font-light hover:text-pastel_buffet-500 px-0 py-2 transition-colors uppercase md:px-4">Das Rezept</a>
+                        <a onclick="toggle()" href="/#lageplan" class="font-light hover:text-pastel_buffet-500 px-0 py-2 transition-colors uppercase md:px-4">Lageplan</a>
+                        <a onclick="toggle()" href="/konzept" class="font-light hover:text-pastel_buffet-500 px-0 py-2 transition-colors uppercase md:px-4">Unterstützen</a>
                     </div>
                 </div>
             </nav>
         </header>
-        <main id="main" class="mx-auto lg:w-10/12 xl:w-8/12 2xl:w-7/12">
+        <main id="main" class="mx-auto lg:w-10/12 xl:w-8/12 2xl:w-7/12 nav-margin">
             <div style="background-image: url('assets/bilder/buffet.jpg'); background-position: center center; background-size: cover;" cms-post-image>
                 <div class="container mx-auto flex flex-col-reverse p-4 relative text-center md:h-80">
                     <h1 class="break text-6xl text-left text-white md:absolute md:bottom-0 md:inset-x-0 md:mb-10 md:text-8xl md:text-center" cms-post-title>impressum</h1>
@@ -133,10 +133,8 @@
             </div>
         </footer>
         <script src="pgia/lib/pgia.js"></script>
-        <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="js/clipboard.min.js"></script>
         <script src="js/jquery.fittext.js"></script>
         <script type="text/javascript" src="script.js"></script>
     </body>
